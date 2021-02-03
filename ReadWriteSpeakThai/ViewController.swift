@@ -3,6 +3,20 @@ import UIKit
 
 
 class ViewController: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 2
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cardOverview = headerCard.dequeueReusableCell(withReuseIdentifier: "OverviewCard", for: indexPath) as! OverviewCard
+        return cardOverview
+        
+    }
+    
+    //registry cell
+    
+    //
     
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var bottomNavigation: UIView!
@@ -14,6 +28,12 @@ class ViewController: UIViewController , UICollectionViewDelegate, UICollectionV
     @IBOutlet weak var appNameLabel: UILabel!
     @IBOutlet weak var screenNameLabel: UILabel!
     @IBOutlet weak var coinValueLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        headerCard.register(UINib(nibName: "OverviewCard", bundle: nil), forCellWithReuseIdentifier: "OverviewCard")
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
