@@ -49,7 +49,7 @@
                                 <rect key="frame" x="114.5" y="69" width="21.5" height="21.5"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="V28-ar-Fi4" firstAttribute="top" secondItem="qzJ-3k-7Jp" secondAttribute="top" constant="15" id="538-ah-Mpe"/>
                             <constraint firstItem="wcT-nE-pfr" firstAttribute="leading" secondItem="BIi-5v-St4" secondAttribute="trailing" constant="5" id="9Kk-po-zt4"/>
