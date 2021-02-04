@@ -16,6 +16,8 @@ class ColorConstant {
     static let lightGrayColor = UIColor(red: 0.95, green: 0.95, blue: 0.98, alpha: 1)
     static let blackDark = UIColor(red: 0.086, green: 0.09, blue: 0.098, alpha: 1)
     static let redLightColor = UIColor(red: 1, green: 0.505, blue: 0.505, alpha: 1)
+    static let purpleColor = UIColor(red: 0.389, green: 0.376, blue: 1, alpha: 1)
+    static let lightPurpleColor = UIColor(red: 0.389, green: 0.376, blue: 1, alpha: 0.3)
     
     private init(){}
     

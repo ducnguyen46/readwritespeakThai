@@ -30,7 +30,7 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="EaW-2z-6Q9" secondAttribute="trailing" constant="15" id="NX4-8J-bVH"/>
                             <constraint firstItem="8Gh-h5-Bry" firstAttribute="leading" secondItem="pma-og-ONJ" secondAttribute="leading" constant="15" id="UA3-vQ-sWA"/>
@@ -50,6 +50,7 @@
             <size key="customSize" width="315" height="89"/>
             <connections>
                 <outlet property="actionButton" destination="EaW-2z-6Q9" id="MJw-kq-0Kt"/>
+                <outlet property="parentView" destination="pma-og-ONJ" id="tMz-YE-u6m"/>
                 <outlet property="titleWorkCard" destination="8Gh-h5-Bry" id="6YZ-rn-X7M"/>
             </connections>
             <point key="canvasLocation" x="278.98550724637681" y="101.11607142857143"/>

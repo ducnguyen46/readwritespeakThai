@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C34F8EFC25CC4480001EE138 /* ToolGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F8EFA25CC4480001EE138 /* ToolGameCollectionViewCell.swift */; };
+		C34F8EFD25CC4480001EE138 /* ToolGameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34F8EFB25CC4480001EE138 /* ToolGameCollectionViewCell.xib */; };
 		C3523FAD25CAD18C006886C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3523FAC25CAD18C006886C0 /* AppDelegate.swift */; };
 		C3523FAF25CAD18C006886C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3523FAE25CAD18C006886C0 /* SceneDelegate.swift */; };
 		C3523FB125CAD18C006886C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3523FB025CAD18C006886C0 /* ViewController.swift */; };
@@ -21,10 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C34F8EFA25CC4480001EE138 /* ToolGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolGameCollectionViewCell.swift; sourceTree = "<group>"; };
+		C34F8EFB25CC4480001EE138 /* ToolGameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolGameCollectionViewCell.xib; sourceTree = "<group>"; };
 		C3523FA925CAD18C006886C0 /* ReadWriteSpeakThai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadWriteSpeakThai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3523FAC25CAD18C006886C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3523FAE25CAD18C006886C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C3523FB025CAD18C006886C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3523FB025CAD18C006886C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		C3523FB325CAD18C006886C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3523FB525CAD192006886C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3523FB825CAD192006886C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C34F8EF925CC4443001EE138 /* ToolGameCard */ = {
+			isa = PBXGroup;
+			children = (
+				C34F8EFA25CC4480001EE138 /* ToolGameCollectionViewCell.swift */,
+				C34F8EFB25CC4480001EE138 /* ToolGameCollectionViewCell.xib */,
+			);
+			path = ToolGameCard;
+			sourceTree = "<group>";
+		};
 		C3523FA025CAD18C006886C0 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 		C3F19D6525CAE3160026D960 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				C34F8EF925CC4443001EE138 /* ToolGameCard */,
 				C3805B6925CB9DAA00518151 /* WorkCard */,
 				C3F19D6625CAE31F0026D960 /* HeaderCard */,
 			);
@@ -176,6 +190,7 @@
 				C3805B6D25CB9E7800518151 /* WorkCollectionViewCell.xib in Resources */,
 				C3523FB625CAD192006886C0 /* Assets.xcassets in Resources */,
 				C3F19D6A25CAE3760026D960 /* OverviewCard.xib in Resources */,
+				C34F8EFD25CC4480001EE138 /* ToolGameCollectionViewCell.xib in Resources */,
 				C3523FB425CAD18C006886C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +207,7 @@
 				C3523FAD25CAD18C006886C0 /* AppDelegate.swift in Sources */,
 				C3523FAF25CAD18C006886C0 /* SceneDelegate.swift in Sources */,
 				C3F19D6425CAD2F30026D960 /* Constant.swift in Sources */,
+				C34F8EFC25CC4480001EE138 /* ToolGameCollectionViewCell.swift in Sources */,
 				C3F19D6925CAE3760026D960 /* OverviewCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

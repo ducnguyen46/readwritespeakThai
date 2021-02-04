@@ -9,12 +9,14 @@
 import UIKit
 
 class WorkCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var parentView: UIView!
     @IBOutlet weak var titleWorkCard: UILabel!
     @IBOutlet weak var actionButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        parentView.layer.cornerRadius = 10.0
         actionButton.layer.cornerRadius = 0.5 * actionButton.bounds.size.width
         actionButton.backgroundColor = ColorConstant.redLightColor
         titleWorkCard.font = UIFont.systemFont(ofSize: 12.0, weight: UIFont.Weight(0.7))
