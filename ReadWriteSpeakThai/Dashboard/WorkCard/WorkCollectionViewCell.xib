@@ -20,13 +20,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="176" height="60"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Work Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gh-h5-Bry">
-                                <rect key="frame" x="15" y="23.5" width="88" height="14.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <rect key="frame" x="15" y="23" width="93.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaW-2z-6Q9">
-                                <rect key="frame" x="131" y="16" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaW-2z-6Q9">
+                                <rect key="frame" x="131" y="15" width="30" height="30"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </button>
                         </subviews>
@@ -34,8 +34,10 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="EaW-2z-6Q9" secondAttribute="trailing" constant="15" id="NX4-8J-bVH"/>
                             <constraint firstItem="8Gh-h5-Bry" firstAttribute="leading" secondItem="pma-og-ONJ" secondAttribute="leading" constant="15" id="UA3-vQ-sWA"/>
-                            <constraint firstAttribute="bottom" secondItem="8Gh-h5-Bry" secondAttribute="bottom" constant="22" id="e92-ij-nCU"/>
+                            <constraint firstItem="8Gh-h5-Bry" firstAttribute="centerY" secondItem="pma-og-ONJ" secondAttribute="centerY" id="YTo-1I-8fo"/>
                             <constraint firstItem="EaW-2z-6Q9" firstAttribute="centerY" secondItem="8Gh-h5-Bry" secondAttribute="centerY" id="mgZ-08-bYf"/>
+                            <constraint firstItem="EaW-2z-6Q9" firstAttribute="width" secondItem="pma-og-ONJ" secondAttribute="height" multiplier="0.5" id="pSz-hT-hRP"/>
+                            <constraint firstItem="EaW-2z-6Q9" firstAttribute="height" secondItem="pma-og-ONJ" secondAttribute="height" multiplier="0.5" id="sKV-m3-gQO"/>
                         </constraints>
                     </view>
                 </subviews>
