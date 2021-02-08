@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C34C364425D0C78100D7BD2F /* ModeCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C364225D0C78100D7BD2F /* ModeCardCollectionViewCell.swift */; };
+		C34C364525D0C78100D7BD2F /* ModeCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34C364325D0C78100D7BD2F /* ModeCardCollectionViewCell.xib */; };
+		C34C364725D0CD8B00D7BD2F /* ModeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C364625D0CD8B00D7BD2F /* ModeCard.swift */; };
 		C34F8EFC25CC4480001EE138 /* ToolGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F8EFA25CC4480001EE138 /* ToolGameCollectionViewCell.swift */; };
 		C34F8EFD25CC4480001EE138 /* ToolGameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34F8EFB25CC4480001EE138 /* ToolGameCollectionViewCell.xib */; };
 		C3523FAD25CAD18C006886C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3523FAC25CAD18C006886C0 /* AppDelegate.swift */; };
@@ -14,6 +17,10 @@
 		C3523FB425CAD18C006886C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3523FB225CAD18C006886C0 /* Main.storyboard */; };
 		C3523FB625CAD192006886C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3523FB525CAD192006886C0 /* Assets.xcassets */; };
 		C3523FB925CAD192006886C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3523FB725CAD192006886C0 /* LaunchScreen.storyboard */; };
+		C354818A25D1294D00260008 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354818925D1294D00260008 /* ToolsViewController.swift */; };
+		C354818E25D1382E00260008 /* ToolCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354818C25D1382E00260008 /* ToolCollectionViewCell.swift */; };
+		C354818F25D1382E00260008 /* ToolCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C354818D25D1382E00260008 /* ToolCollectionViewCell.xib */; };
+		C354819125D13CD400260008 /* ToolCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354819025D13CD400260008 /* ToolCard.swift */; };
 		C3552D2B25CCDF4F00869020 /* WorkCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3552D2A25CCDF4F00869020 /* WorkCard.swift */; };
 		C3552D2D25CCED1A00869020 /* ToolGameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3552D2C25CCED1A00869020 /* ToolGameCard.swift */; };
 		C355BBF425CFEAB0003E95E3 /* ModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BBF325CFEAB0003E95E3 /* ModesViewController.swift */; };
@@ -26,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C34C364225D0C78100D7BD2F /* ModeCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		C34C364325D0C78100D7BD2F /* ModeCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModeCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		C34C364625D0CD8B00D7BD2F /* ModeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCard.swift; sourceTree = "<group>"; };
 		C34F8EFA25CC4480001EE138 /* ToolGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolGameCollectionViewCell.swift; sourceTree = "<group>"; };
 		C34F8EFB25CC4480001EE138 /* ToolGameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolGameCollectionViewCell.xib; sourceTree = "<group>"; };
 		C3523FA925CAD18C006886C0 /* ReadWriteSpeakThai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadWriteSpeakThai.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +45,10 @@
 		C3523FB525CAD192006886C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3523FB825CAD192006886C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3523FBA25CAD193006886C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C354818925D1294D00260008 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
+		C354818C25D1382E00260008 /* ToolCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCollectionViewCell.swift; sourceTree = "<group>"; };
+		C354818D25D1382E00260008 /* ToolCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolCollectionViewCell.xib; sourceTree = "<group>"; };
+		C354819025D13CD400260008 /* ToolCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCard.swift; sourceTree = "<group>"; };
 		C3552D2A25CCDF4F00869020 /* WorkCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCard.swift; sourceTree = "<group>"; };
 		C3552D2C25CCED1A00869020 /* ToolGameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolGameCard.swift; sourceTree = "<group>"; };
 		C355BBF325CFEAB0003E95E3 /* ModesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +71,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C34C364025D0C70B00D7BD2F /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+				C34C364125D0C72500D7BD2F /* ModesCard */,
+			);
+			path = Modes;
+			sourceTree = "<group>";
+		};
+		C34C364125D0C72500D7BD2F /* ModesCard */ = {
+			isa = PBXGroup;
+			children = (
+				C34C364225D0C78100D7BD2F /* ModeCardCollectionViewCell.swift */,
+				C34C364325D0C78100D7BD2F /* ModeCardCollectionViewCell.xib */,
+			);
+			path = ModesCard;
+			sourceTree = "<group>";
+		};
 		C34F8EF925CC4443001EE138 /* ToolGameCard */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +119,8 @@
 				C355BBF225CFE9D4003E95E3 /* ViewController */,
 				C3552D2925CCDF2100869020 /* Model */,
 				C3F19D6525CAE3160026D960 /* Dashboard */,
+				C34C364025D0C70B00D7BD2F /* Modes */,
+				C354818825D1287800260008 /* Tools */,
 				C3F19D6225CAD2A20026D960 /* Constant */,
 				C3523FAC25CAD18C006886C0 /* AppDelegate.swift */,
 				C3523FAE25CAD18C006886C0 /* SceneDelegate.swift */,
@@ -99,11 +132,30 @@
 			path = ReadWriteSpeakThai;
 			sourceTree = "<group>";
 		};
+		C354818825D1287800260008 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C354818B25D1381500260008 /* ToolsCard */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C354818B25D1381500260008 /* ToolsCard */ = {
+			isa = PBXGroup;
+			children = (
+				C354818C25D1382E00260008 /* ToolCollectionViewCell.swift */,
+				C354818D25D1382E00260008 /* ToolCollectionViewCell.xib */,
+			);
+			path = ToolsCard;
+			sourceTree = "<group>";
+		};
 		C3552D2925CCDF2100869020 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				C3552D2A25CCDF4F00869020 /* WorkCard.swift */,
 				C3552D2C25CCED1A00869020 /* ToolGameCard.swift */,
+				C34C364625D0CD8B00D7BD2F /* ModeCard.swift */,
+				C354819025D13CD400260008 /* ToolCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,6 +165,7 @@
 			children = (
 				C355BBF525CFECE7003E95E3 /* DashboardViewController.swift */,
 				C355BBF325CFEAB0003E95E3 /* ModesViewController.swift */,
+				C354818925D1294D00260008 /* ToolsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -211,12 +264,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C354818F25D1382E00260008 /* ToolCollectionViewCell.xib in Resources */,
 				C3523FB925CAD192006886C0 /* LaunchScreen.storyboard in Resources */,
 				C3805B6D25CB9E7800518151 /* WorkCollectionViewCell.xib in Resources */,
 				C3523FB625CAD192006886C0 /* Assets.xcassets in Resources */,
 				C3F19D6A25CAE3760026D960 /* OverviewCard.xib in Resources */,
 				C34F8EFD25CC4480001EE138 /* ToolGameCollectionViewCell.xib in Resources */,
 				C3523FB425CAD18C006886C0 /* Main.storyboard in Resources */,
+				C34C364525D0C78100D7BD2F /* ModeCardCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,15 +282,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C34C364725D0CD8B00D7BD2F /* ModeCard.swift in Sources */,
+				C34C364425D0C78100D7BD2F /* ModeCardCollectionViewCell.swift in Sources */,
 				C3805B6C25CB9E7800518151 /* WorkCollectionViewCell.swift in Sources */,
 				C3523FAD25CAD18C006886C0 /* AppDelegate.swift in Sources */,
 				C355BBF425CFEAB0003E95E3 /* ModesViewController.swift in Sources */,
 				C3523FAF25CAD18C006886C0 /* SceneDelegate.swift in Sources */,
+				C354818E25D1382E00260008 /* ToolCollectionViewCell.swift in Sources */,
 				C3552D2D25CCED1A00869020 /* ToolGameCard.swift in Sources */,
+				C354818A25D1294D00260008 /* ToolsViewController.swift in Sources */,
 				C3F19D6425CAD2F30026D960 /* Constant.swift in Sources */,
 				C34F8EFC25CC4480001EE138 /* ToolGameCollectionViewCell.swift in Sources */,
 				C355BBF625CFECE7003E95E3 /* DashboardViewController.swift in Sources */,
 				C3552D2B25CCDF4F00869020 /* WorkCard.swift in Sources */,
+				C354819125D13CD400260008 /* ToolCard.swift in Sources */,
 				C3F19D6925CAE3760026D960 /* OverviewCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
