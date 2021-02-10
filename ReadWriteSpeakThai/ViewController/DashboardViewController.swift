@@ -78,7 +78,7 @@ class DashboardViewController: UIViewController {
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             switch collectionView {
             case headerCard:
-                return 4
+                return 2
             case workCollectionView:
                 return WorkCard.getWordCard().count
             case toolGameCollectionView:
@@ -147,11 +147,12 @@ class DashboardViewController: UIViewController {
         }
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             let screenWidth = UIScreen.main.bounds.width - 50
-            let screenHeight = UIScreen.main.bounds.height
             
             switch collectionView {
             case headerCard:
-                return CGSize(width: screenWidth/2-5, height: screenHeight * 0.1)
+                let height = headerCard.bounds.size.height
+                let width = headerCard.bounds.size.width
+                return CGSize(width: width/2 - 5, height: height)
             case workCollectionView:
                 return CGSize(width: screenWidth/2-6, height: (screenWidth/2)*1/3 - 5)
             case toolGameCollectionView:

@@ -20,7 +20,7 @@ class OverviewCard: UICollectionViewCell {
         parentView.backgroundColor = UIColor.white
                 
         titleCard.font = UIFont.systemFont(ofSize: 16.0, weight: .bold)
-        overviewButton.layer.cornerRadius = 20.0
+        overviewButton.layer.cornerRadius = 0.5 * overviewButton.bounds.size.height
         overviewButton.backgroundColor = ColorConstant.primaryColor
         overviewButton.titleLabel?.font = UIFont.systemFont(ofSize: 16.0, weight:  .bold)
         

@@ -13,6 +13,7 @@ class ColorConstant {
     static let instance = ColorConstant()
     //color
     static let primaryColor = UIColor(red:99/255,green:96/255,blue:255/255,alpha:1)
+    static let grayWhite = UIColor(red: 252/255,green: 252/255, blue: 255/255, alpha: 1)
     static let lightGray = UIColor(red: 0.95, green: 0.95, blue: 0.98, alpha: 1)
     static let blackDark = UIColor(red: 0.086, green: 0.09, blue: 0.098, alpha: 1)
     static let lightRed = UIColor(red: 1, green: 0.505, blue: 0.505, alpha: 1)
@@ -22,7 +23,7 @@ class ColorConstant {
     static let lightOrage = UIColor(red: 1, green: 0.809, blue: 0.633, alpha: 1)
     static let lightPink = UIColor(red: 0.977, green: 0.833, blue: 1, alpha: 1)
     static let lightGreen = UIColor(red: 0.796, green: 1, blue: 0.988, alpha: 1)
-    
+    static let darkGray = UIColor(red: 13/255, green: 19/255, blue: 51/255, alpha: 0.6)
     private init(){}
     
 }

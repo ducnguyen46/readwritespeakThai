@@ -19,7 +19,7 @@ class WorkCollectionViewCell: UICollectionViewCell {
         parentView.layer.cornerRadius = 10.0
         actionButton.layer.cornerRadius = 0.5 * actionButton.bounds.size.width
         actionButton.backgroundColor = ColorConstant.lightRed
-        actionButton.setImage(UIImage(named:"ic-more"), for: [.normal])
+//        actionButton.setImage(UIImage(named:"ic-more"), for: [.normal])
         
         titleWorkCard.font = UIFont.systemFont(ofSize: 12.0, weight: .bold)
         titleWorkCard.textColor = ColorConstant.blackDark
