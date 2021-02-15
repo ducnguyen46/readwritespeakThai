@@ -12,17 +12,24 @@
 		C34C364725D0CD8B00D7BD2F /* ModeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C364625D0CD8B00D7BD2F /* ModeCard.swift */; };
 		C34F8EFC25CC4480001EE138 /* ToolGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F8EFA25CC4480001EE138 /* ToolGameCollectionViewCell.swift */; };
 		C34F8EFD25CC4480001EE138 /* ToolGameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34F8EFB25CC4480001EE138 /* ToolGameCollectionViewCell.xib */; };
+		C350BCC725D3E0E100A4D9CC /* DeckListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350BCC525D3E0E100A4D9CC /* DeckListCollectionViewCell.swift */; };
+		C350BCC825D3E0E100A4D9CC /* DeckListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C350BCC625D3E0E100A4D9CC /* DeckListCollectionViewCell.xib */; };
 		C3523FAD25CAD18C006886C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3523FAC25CAD18C006886C0 /* AppDelegate.swift */; };
 		C3523FAF25CAD18C006886C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3523FAE25CAD18C006886C0 /* SceneDelegate.swift */; };
 		C3523FB425CAD18C006886C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3523FB225CAD18C006886C0 /* Main.storyboard */; };
 		C3523FB625CAD192006886C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3523FB525CAD192006886C0 /* Assets.xcassets */; };
 		C3523FB925CAD192006886C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3523FB725CAD192006886C0 /* LaunchScreen.storyboard */; };
+		C353585125DAB7C6008FC7DD /* DeckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C353585025DAB7C6008FC7DD /* DeckListViewController.swift */; };
+		C353585625DABEFB008FC7DD /* VerbCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C353585425DABEFB008FC7DD /* VerbCollectionViewCell.swift */; };
+		C353585725DABEFB008FC7DD /* VerbCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C353585525DABEFB008FC7DD /* VerbCollectionViewCell.xib */; };
+		C353585925DAD691008FC7DD /* VerbCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C353585825DAD691008FC7DD /* VerbCard.swift */; };
 		C354818A25D1294D00260008 /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354818925D1294D00260008 /* ToolsViewController.swift */; };
 		C354818E25D1382E00260008 /* ToolCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354818C25D1382E00260008 /* ToolCollectionViewCell.swift */; };
 		C354818F25D1382E00260008 /* ToolCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C354818D25D1382E00260008 /* ToolCollectionViewCell.xib */; };
 		C354819125D13CD400260008 /* ToolCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354819025D13CD400260008 /* ToolCard.swift */; };
 		C3552D2B25CCDF4F00869020 /* WorkCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3552D2A25CCDF4F00869020 /* WorkCard.swift */; };
 		C3552D2D25CCED1A00869020 /* ToolGameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3552D2C25CCED1A00869020 /* ToolGameCard.swift */; };
+		C355975425D93C00003E2B17 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355975325D93C00003E2B17 /* AddCardViewController.swift */; };
 		C355BBF425CFEAB0003E95E3 /* ModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BBF325CFEAB0003E95E3 /* ModesViewController.swift */; };
 		C355BBF625CFECE7003E95E3 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BBF525CFECE7003E95E3 /* DashboardViewController.swift */; };
 		C35DD20C25D29E030057F0E1 /* FlashCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35DD20B25D29E030057F0E1 /* FlashCardViewController.swift */; };
@@ -32,6 +39,7 @@
 		C3DB849425D21A340074B19B /* SettingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB849225D21A340074B19B /* SettingCollectionViewCell.swift */; };
 		C3DB849525D21A340074B19B /* SettingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DB849325D21A340074B19B /* SettingCollectionViewCell.xib */; };
 		C3DB849725D2230B0074B19B /* SettingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB849625D2230B0074B19B /* SettingCard.swift */; };
+		C3EACEE025D919CC009E0A45 /* ShowDeckListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EACEDF25D919CC009E0A45 /* ShowDeckListButton.swift */; };
 		C3F19D6425CAD2F30026D960 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F19D6325CAD2F30026D960 /* Constant.swift */; };
 		C3F19D6925CAE3760026D960 /* OverviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F19D6725CAE3760026D960 /* OverviewCard.swift */; };
 		C3F19D6A25CAE3760026D960 /* OverviewCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3F19D6825CAE3760026D960 /* OverviewCard.xib */; };
@@ -43,6 +51,8 @@
 		C34C364625D0CD8B00D7BD2F /* ModeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCard.swift; sourceTree = "<group>"; };
 		C34F8EFA25CC4480001EE138 /* ToolGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolGameCollectionViewCell.swift; sourceTree = "<group>"; };
 		C34F8EFB25CC4480001EE138 /* ToolGameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolGameCollectionViewCell.xib; sourceTree = "<group>"; };
+		C350BCC525D3E0E100A4D9CC /* DeckListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListCollectionViewCell.swift; sourceTree = "<group>"; };
+		C350BCC625D3E0E100A4D9CC /* DeckListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeckListCollectionViewCell.xib; sourceTree = "<group>"; };
 		C3523FA925CAD18C006886C0 /* ReadWriteSpeakThai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadWriteSpeakThai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3523FAC25CAD18C006886C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3523FAE25CAD18C006886C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,12 +60,17 @@
 		C3523FB525CAD192006886C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3523FB825CAD192006886C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3523FBA25CAD193006886C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C353585025DAB7C6008FC7DD /* DeckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListViewController.swift; sourceTree = "<group>"; };
+		C353585425DABEFB008FC7DD /* VerbCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbCollectionViewCell.swift; sourceTree = "<group>"; };
+		C353585525DABEFB008FC7DD /* VerbCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerbCollectionViewCell.xib; sourceTree = "<group>"; };
+		C353585825DAD691008FC7DD /* VerbCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbCard.swift; sourceTree = "<group>"; };
 		C354818925D1294D00260008 /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
 		C354818C25D1382E00260008 /* ToolCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCollectionViewCell.swift; sourceTree = "<group>"; };
 		C354818D25D1382E00260008 /* ToolCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolCollectionViewCell.xib; sourceTree = "<group>"; };
 		C354819025D13CD400260008 /* ToolCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCard.swift; sourceTree = "<group>"; };
 		C3552D2A25CCDF4F00869020 /* WorkCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCard.swift; sourceTree = "<group>"; };
 		C3552D2C25CCED1A00869020 /* ToolGameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolGameCard.swift; sourceTree = "<group>"; };
+		C355975325D93C00003E2B17 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 		C355BBF325CFEAB0003E95E3 /* ModesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
 		C355BBF525CFECE7003E95E3 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		C35DD20B25D29E030057F0E1 /* FlashCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +80,7 @@
 		C3DB849225D21A340074B19B /* SettingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewCell.swift; sourceTree = "<group>"; };
 		C3DB849325D21A340074B19B /* SettingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCollectionViewCell.xib; sourceTree = "<group>"; };
 		C3DB849625D2230B0074B19B /* SettingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCard.swift; sourceTree = "<group>"; };
+		C3EACEDF25D919CC009E0A45 /* ShowDeckListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDeckListButton.swift; sourceTree = "<group>"; };
 		C3F19D6325CAD2F30026D960 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C3F19D6725CAE3760026D960 /* OverviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewCard.swift; sourceTree = "<group>"; };
 		C3F19D6825CAE3760026D960 /* OverviewCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverviewCard.xib; sourceTree = "<group>"; };
@@ -107,6 +123,16 @@
 			path = ToolGameCard;
 			sourceTree = "<group>";
 		};
+		C350BCC225D3DFE300A4D9CC /* Choose Deck List */ = {
+			isa = PBXGroup;
+			children = (
+				C3EACEDF25D919CC009E0A45 /* ShowDeckListButton.swift */,
+				C350BCC525D3E0E100A4D9CC /* DeckListCollectionViewCell.swift */,
+				C350BCC625D3E0E100A4D9CC /* DeckListCollectionViewCell.xib */,
+			);
+			path = "Choose Deck List";
+			sourceTree = "<group>";
+		};
 		C3523FA025CAD18C006886C0 = {
 			isa = PBXGroup;
 			children = (
@@ -142,9 +168,20 @@
 			path = ReadWriteSpeakThai;
 			sourceTree = "<group>";
 		};
+		C353585325DABEAF008FC7DD /* VerbListCard */ = {
+			isa = PBXGroup;
+			children = (
+				C353585425DABEFB008FC7DD /* VerbCollectionViewCell.swift */,
+				C353585525DABEFB008FC7DD /* VerbCollectionViewCell.xib */,
+			);
+			path = VerbListCard;
+			sourceTree = "<group>";
+		};
 		C354818825D1287800260008 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				C353585325DABEAF008FC7DD /* VerbListCard */,
+				C350BCC225D3DFE300A4D9CC /* Choose Deck List */,
 				C354818B25D1381500260008 /* ToolsCard */,
 			);
 			path = Tools;
@@ -167,6 +204,7 @@
 				C34C364625D0CD8B00D7BD2F /* ModeCard.swift */,
 				C354819025D13CD400260008 /* ToolCard.swift */,
 				C3DB849625D2230B0074B19B /* SettingCard.swift */,
+				C353585825DAD691008FC7DD /* VerbCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +218,8 @@
 				C354818925D1294D00260008 /* ToolsViewController.swift */,
 				C3DB848E25D2179B0074B19B /* AccountViewController.swift */,
 				C35DD20B25D29E030057F0E1 /* FlashCardViewController.swift */,
+				C355975325D93C00003E2B17 /* AddCardViewController.swift */,
+				C353585025DAB7C6008FC7DD /* DeckListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -289,9 +329,11 @@
 			files = (
 				C354818F25D1382E00260008 /* ToolCollectionViewCell.xib in Resources */,
 				C3523FB925CAD192006886C0 /* LaunchScreen.storyboard in Resources */,
+				C353585725DABEFB008FC7DD /* VerbCollectionViewCell.xib in Resources */,
 				C3805B6D25CB9E7800518151 /* WorkCollectionViewCell.xib in Resources */,
 				C3523FB625CAD192006886C0 /* Assets.xcassets in Resources */,
 				C3DB849525D21A340074B19B /* SettingCollectionViewCell.xib in Resources */,
+				C350BCC825D3E0E100A4D9CC /* DeckListCollectionViewCell.xib in Resources */,
 				C3F19D6A25CAE3760026D960 /* OverviewCard.xib in Resources */,
 				C34F8EFD25CC4480001EE138 /* ToolGameCollectionViewCell.xib in Resources */,
 				C3523FB425CAD18C006886C0 /* Main.storyboard in Resources */,
@@ -308,9 +350,14 @@
 			files = (
 				C34C364725D0CD8B00D7BD2F /* ModeCard.swift in Sources */,
 				C34C364425D0C78100D7BD2F /* ModeCardCollectionViewCell.swift in Sources */,
+				C353585125DAB7C6008FC7DD /* DeckListViewController.swift in Sources */,
+				C353585925DAD691008FC7DD /* VerbCard.swift in Sources */,
+				C350BCC725D3E0E100A4D9CC /* DeckListCollectionViewCell.swift in Sources */,
 				C3DB848F25D2179B0074B19B /* AccountViewController.swift in Sources */,
+				C353585625DABEFB008FC7DD /* VerbCollectionViewCell.swift in Sources */,
 				C3805B6C25CB9E7800518151 /* WorkCollectionViewCell.swift in Sources */,
 				C3523FAD25CAD18C006886C0 /* AppDelegate.swift in Sources */,
+				C355975425D93C00003E2B17 /* AddCardViewController.swift in Sources */,
 				C355BBF425CFEAB0003E95E3 /* ModesViewController.swift in Sources */,
 				C3523FAF25CAD18C006886C0 /* SceneDelegate.swift in Sources */,
 				C35DD20C25D29E030057F0E1 /* FlashCardViewController.swift in Sources */,
@@ -319,6 +366,7 @@
 				C354818A25D1294D00260008 /* ToolsViewController.swift in Sources */,
 				C3F19D6425CAD2F30026D960 /* Constant.swift in Sources */,
 				C3DB849425D21A340074B19B /* SettingCollectionViewCell.swift in Sources */,
+				C3EACEE025D919CC009E0A45 /* ShowDeckListButton.swift in Sources */,
 				C34F8EFC25CC4480001EE138 /* ToolGameCollectionViewCell.swift in Sources */,
 				C355BBF625CFECE7003E95E3 /* DashboardViewController.swift in Sources */,
 				C3552D2B25CCDF4F00869020 /* WorkCard.swift in Sources */,

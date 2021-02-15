@@ -44,7 +44,7 @@ class ModesViewController: UIViewController {
         //rich text
         infoLabel.text = "Select one of the different mode to work on"
         infoLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
-        infoLabel = infoLabel.textBold(label: infoLabel, normalText1: "Select one of the different ", boldText: "mode", normalText2: " to work on", fontSize: 16)
+        infoLabel.textBold(label: infoLabel, normalText1: "Select one of the different ", boldText: "mode", normalText2: " to work on", fontSize: 16)
         
         contentView.roundCorners(corners: [.topLeft, .topRight], radius: 30)
         modeCardCollectionView.layer.backgroundColor = UIColor.clear.cgColor
@@ -109,7 +109,7 @@ extension ModesViewController: UICollectionViewDelegateFlowLayout {
 
 
 extension UILabel {
-    func textBold (label:UILabel, normalText1: String, boldText: String, normalText2: String, fontSize:CGFloat) -> UILabel {
+    func textBold (label:UILabel, normalText1: String, boldText: String, normalText2: String, fontSize:CGFloat) {
         let attributedNormal1 = NSMutableAttributedString(
         string: normalText1,
         attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: fontSize)])
@@ -129,6 +129,5 @@ extension UILabel {
         attributedText.append(attributedNormal2)
         
         label.attributedText = attributedText
-        return label
     }
 }

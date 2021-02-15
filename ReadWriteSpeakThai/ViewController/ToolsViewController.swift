@@ -41,7 +41,7 @@ class ToolsViewController: UIViewController {
         //rich text
         infoLabel.text = "Select one of the different mode to work on"
         infoLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
-        infoLabel = infoLabel.textBold(label: infoLabel, normalText1: "Select one of the different ", boldText: "tool", normalText2: " to work on", fontSize: 16)
+        infoLabel.textBold(label: infoLabel, normalText1: "Select one of the different ", boldText: "tool", normalText2: " to work on", fontSize: 16)
         toolsCollectionView.backgroundColor = UIColor.clear
         
         
