@@ -104,10 +104,6 @@ class DashboardViewController: UIViewController {
                         for: indexPath) as! ToolGameCollectionViewCell
                     toolGameCard.titleToolGameCard.text = toolGameCards[indexPath.row].getTitle()
                     toolGameCard.iconImage.image = UIImage(named: toolGameCards[indexPath.row].getIcon())
-                    toolGameCard.actionButton.addTarget(
-                        toolGameCard,
-                        action: #selector(toolGameCard.buttonSelected(_:)),
-                        for: .touchUpInside)
                     toolGameCard.actionButton.tag = indexPath.row
                     return toolGameCard
                 default:

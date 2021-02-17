@@ -9,6 +9,9 @@
 import UIKit
 
 class ToolsViewController: UIViewController {
+    
+    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var appNameLabel: UILabel!
     @IBOutlet weak var screenNameLabel: UILabel!
@@ -23,7 +26,6 @@ class ToolsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         toolsCollectionView.register(
             UINib(nibName: "ToolCollectionViewCell",
                   bundle: nil),
@@ -62,6 +64,7 @@ extension ToolsViewController: UICollectionViewDelegate, UICollectionViewDataSou
         
         toolCardCell.actionButton.setTitle(toolCards[indexPath.row].getButtonTitle(), for: [.normal])
         toolCardCell.actionButton.setTitleColor(UIColor.white, for: [.normal, .highlighted, .selected])
+        toolCardCell.actionButton.addTarget(self, action: #selector(cardClicked(_:)), for: .allEvents)
         
         if toolCards[indexPath.row].getStatusAvailable() == false {
             toolCardCell.image.image = UIImage(named: "img-voteforme")
@@ -70,6 +73,13 @@ extension ToolsViewController: UICollectionViewDelegate, UICollectionViewDataSou
         }
         
         return toolCardCell
+    }
+    
+    @objc func cardClicked(_ sender: UIButton){
+        let flashCardVC = mainStoryboard.instantiateViewController(identifier: "FlashCardViewController")
+        print("hi?")
+        flashCardVC.modalPresentationStyle = .fullScreen
+        self.present(flashCardVC, animated: true, completion: nil)
     }
 }
 

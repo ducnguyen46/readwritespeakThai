@@ -18,9 +18,4 @@ class ToolGameCollectionViewCell: UICollectionViewCell {
         actionButton.setImage(UIImage(named: "ic-more"), for: .normal)
         
     }
-    @IBAction func buttonSelected(_ sender:
-        UIButton) {
-        print("Button at: \(sender.tag)")
-    }
-    
 }

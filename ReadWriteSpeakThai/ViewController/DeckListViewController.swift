@@ -16,14 +16,40 @@ class DeckListViewController: UIViewController {
     @IBOutlet weak var activeButton: UIButton!
     @IBOutlet weak var verbCollectionView: UICollectionView!
     
-    var titleText: String?
+    var titleText: String? = "test"
     var infoText: String?
     var isActive: Bool = false
     
-    let verbList = VerbCard.getListVerbCard()
+    var verbList:[VerbCard] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //check titleText
+        print(titleText!)
+        switch titleText {
+        case "Top 25 Verbs":
+            verbList = VerbCard.getListVerbCard()
+            break
+            
+        case "Vegetables names":
+            verbList = VerbCard.getListVerbCard()
+            break
+            
+        case "The 20 words containing":
+            verbList = VerbCard.getListVerbCard()
+            break
+            
+        case "Top 25 adjectives":
+            verbList = VerbCard.getListVerbCard()
+            break
+            
+        case "Top 25 classifier":
+            verbList = VerbCard.getListVerbCard()
+            break
+            
+        default:
+            verbList = VerbCard.getListVerbCard()
+        }
         //registry
         verbCollectionView.register(
             UINib(
@@ -73,6 +99,7 @@ class DeckListViewController: UIViewController {
 
     @objc func backToPreviousViewController(){
         self.navigationController?.popViewController(animated: true)
+        print("he")
     }
     
     @objc func activeDeckList(str: String){

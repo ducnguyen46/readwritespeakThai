@@ -28,7 +28,6 @@ class VerbCard {
         for _ in 0...10 {
             verbList.append(verbList[Int.random(in: 0...1)])
         }
-        print(verbList)
         return verbList
     }
 }

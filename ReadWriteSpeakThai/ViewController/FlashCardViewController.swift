@@ -9,10 +9,14 @@
 import UIKit
 
 class FlashCardViewController: UIViewController {
+    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
     
     let deckList:[String] = ["Top 25 Verbs", "Vegetables names", "The 20 words containing", "Top 25 adjectives", "Top 25 classifier"]
 
     @IBOutlet var parentView: UIView!
+    @IBOutlet weak var navigationBarView: UIView!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var moreInfoButton: UIButton!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var titleFlashCard: UILabel!
@@ -29,30 +33,6 @@ class FlashCardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //navigation
-        navigationController?.navigationBar.barTintColor = ColorConstant.primaryColor
-        navigationController?.navigationBar.barStyle = UIBarStyle.black
-        
-        navigationItem.title = "Flash Card"
-        navigationController?.navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor : UIColor.white,
-            NSAttributedString.Key.font : UIFont.systemFont(
-                ofSize: 18,
-                weight: .bold)
-        ]
-        
-        let backRoundButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-        backRoundButton.backgroundColor = UIColor.white
-        backRoundButton.layer.cornerRadius = 0.5 * backRoundButton.bounds.size.width
-        backRoundButton.setImage(UIImage(named: "ic-back"), for: .normal)
-        backRoundButton.addTarget(self, action: #selector(backToPreviousViewController), for: .allEvents)
-        
-        let backBarButton = UIBarButtonItem()
-        backBarButton.customView = backRoundButton
-        
-        navigationItem.leftBarButtonItems = [backBarButton]
-        
-        
         // registry
         deckListCollectionView.register(
             UINib(
@@ -60,8 +40,13 @@ class FlashCardViewController: UIViewController {
                 bundle: nil),
             forCellWithReuseIdentifier: "DeckListCollectionViewCell")
         
-        // Do any additional setup after loading the view.
+        // view
         parentView.backgroundColor = ColorConstant.primaryColor
+        
+        backButton.layer.cornerRadius = 0.5 * backButton.bounds.size.width
+        
+        moreInfoButton.layer.cornerRadius = 0.5 * moreInfoButton.bounds.size.width
+        
         contentView.roundCorners(corners: [.topLeft, .topRight], radius: 30)
         contentView.backgroundColor = ColorConstant.lightGray
         
@@ -72,6 +57,7 @@ class FlashCardViewController: UIViewController {
         titleFlashCard.textColor = .black
         
         addFlashCardButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        addFlashCardButton.addTarget(self, action: #selector(startAddFlashCard), for: .allEvents)
         
         settingFlashCardButton.backgroundColor = ColorConstant.purple
         settingFlashCardButton.layer.cornerRadius = 1/2 * settingFlashCardButton.bounds.size.height
@@ -87,13 +73,14 @@ class FlashCardViewController: UIViewController {
         infoLabel.textColor = .black
         infoLabel.lineBreakMode = .byWordWrapping
         infoLabel.numberOfLines = 0
+        
+        // action for button
+        backButton.addTarget(self, action: #selector(backToPreviousViewController), for: .allEvents)
           
     }
     
     @objc func backToPreviousViewController(){
-//        self.navigationController?.popViewController(animated: true)
-        i = i+1
-        print(i)
+        self.dismiss(animated: true, completion: nil)
     }
 
 }
@@ -116,17 +103,40 @@ extension FlashCardViewController: UICollectionViewDelegate, UICollectionViewDat
             cell.parentView.backgroundColor = ColorConstant.lightGray
         }
         cell.actionButton.tag = indexPath.row
-        cell.actionButton.addTarget(self, action: #selector(clicked(_:)), for: .touchUpInside)
+        print(cell.actionButton.tag)
+        cell.actionButton.addTarget(self, action: #selector(showDeckListClicked(_:)), for: .touchUpInside)
         return cell
     }
     
-    @objc func clicked(_ sender:UIButton){
-        if(sender.tag == 0){
-            self.navigationController?.pushViewController(AddCardViewController(), animated: true)
-        }
-        else {
-            print("clicked")
-        }
+    @objc func showDeckListClicked(_ sender:UIButton){
+        let titleInfoDeckOverview:[Int: [String]] = [
+            0: ["Top 25 Verbs","This deck is for people who wants to wor on the most common verbs. Activate it now to enjoy it!"],
+            1: ["Vegetables names","This deck is for people who wants to wor on the most common verbs. Activate it now to enjoy it!"],
+            2: ["The 20 words containing","This deck is for people who wants to wor on the most common verbs. Activate it now to enjoy it!"],
+            3: ["Top 25 adjectives","This deck is for people who wants to wor on the most common verbs. Activate it now to enjoy it!"],
+            4: ["Top 25 classifier","This deck is for people who wants to wor on the most common verbs. Activate it now to enjoy it!"] ]
+        
+        
+        let deckListVC = mainStoryboard.instantiateViewController(identifier: "DeckListViewController") as! DeckListViewController
+        
+//        let deckListVC = DeckListViewController()
+
+        
+        let titleText = titleInfoDeckOverview[sender.tag]![0]
+        deckListVC.titleText =  titleText // key
+        
+        let infoText = titleInfoDeckOverview[sender.tag]![1]
+        deckListVC.infoText = infoText// value
+        
+        deckListVC.modalPresentationStyle = .fullScreen
+        self.present(deckListVC, animated: true, completion: nil)
+    }
+    
+    @objc func startAddFlashCard(){
+        let addCardVC = mainStoryboard.instantiateViewController(identifier: "AddCardViewController") as! AddCardViewController
+        
+        addCardVC.modalPresentationStyle = .fullScreen
+        self.present(addCardVC, animated: true, completion: nil)
     }
 }
 
