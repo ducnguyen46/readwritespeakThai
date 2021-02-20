@@ -9,7 +9,10 @@
 import UIKit
 
 class SourceViewController: UIViewController {
+    @IBOutlet var parentView: UIView!
+    @IBOutlet weak var navigationBarView: UIView!
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var contentView: UIView!
     
     @IBOutlet weak var appCollectionView: UICollectionView!
     @IBOutlet weak var bookCollectionView: UICollectionView!
@@ -24,6 +27,7 @@ class SourceViewController: UIViewController {
                 nibName: "AppSelectionCollectionViewCell",
                 bundle: nil),
             forCellWithReuseIdentifier: "AppSelectionCollectionViewCell")
+        
         bookCollectionView.register(
         UINib(
             nibName: "BookSelectionCollectionViewCell",
@@ -36,7 +40,19 @@ class SourceViewController: UIViewController {
             bundle: nil),
         forCellWithReuseIdentifier: "SubtitleSelectionCollectionViewCell")
         
-    }
+        parentView.backgroundColor = ColorConstant.primaryColor
+        backButton.layer.cornerRadius = 0.5 * backButton.bounds.size.width
+        
+        contentView.backgroundColor = ColorConstant.lightGray
+        contentView.roundCorners(corners: [.topLeft, .topRight], radius: 30.0)
+        
+        // action
+            backButton.addTarget(self, action: #selector(backToPreviousViewController), for: .allEvents)
+        }
+        
+        @objc func backToPreviousViewController(){
+            self.dismiss(animated: true, completion: nil)
+        }
 }
 
 extension SourceViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -71,6 +87,7 @@ extension SourceViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectCell = collectionView.indexPathsForSelectedItems
+        print(selectCell ?? "HIHI")
     }
 }
 
