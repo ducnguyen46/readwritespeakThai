@@ -10,6 +10,7 @@
 		C34C364425D0C78100D7BD2F /* ModeCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C364225D0C78100D7BD2F /* ModeCardCollectionViewCell.swift */; };
 		C34C364525D0C78100D7BD2F /* ModeCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34C364325D0C78100D7BD2F /* ModeCardCollectionViewCell.xib */; };
 		C34C364725D0CD8B00D7BD2F /* ModeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C364625D0CD8B00D7BD2F /* ModeCard.swift */; };
+		C34CFBF325DE6DA500C810EA /* SentencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CFBF225DE6DA500C810EA /* SentencesViewController.swift */; };
 		C34F8EFC25CC4480001EE138 /* ToolGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F8EFA25CC4480001EE138 /* ToolGameCollectionViewCell.swift */; };
 		C34F8EFD25CC4480001EE138 /* ToolGameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34F8EFB25CC4480001EE138 /* ToolGameCollectionViewCell.xib */; };
 		C350BCC725D3E0E100A4D9CC /* DeckListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C350BCC525D3E0E100A4D9CC /* DeckListCollectionViewCell.swift */; };
@@ -27,12 +28,19 @@
 		C354818E25D1382E00260008 /* ToolCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354818C25D1382E00260008 /* ToolCollectionViewCell.swift */; };
 		C354818F25D1382E00260008 /* ToolCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C354818D25D1382E00260008 /* ToolCollectionViewCell.xib */; };
 		C354819125D13CD400260008 /* ToolCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C354819025D13CD400260008 /* ToolCard.swift */; };
+		C3549B5225E0A45300659DCA /* BookSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3549B5025E0A45300659DCA /* BookSelectionCollectionViewCell.swift */; };
+		C3549B5325E0A45300659DCA /* BookSelectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3549B5125E0A45300659DCA /* BookSelectionCollectionViewCell.xib */; };
+		C3549B5725E0A5B900659DCA /* SubtitleSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3549B5525E0A5B900659DCA /* SubtitleSelectionCollectionViewCell.swift */; };
+		C3549B5825E0A5B900659DCA /* SubtitleSelectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3549B5625E0A5B900659DCA /* SubtitleSelectionCollectionViewCell.xib */; };
+		C3549B5B25E0AED800659DCA /* AppSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3549B5925E0AED800659DCA /* AppSelectionCollectionViewCell.swift */; };
+		C3549B5C25E0AED800659DCA /* AppSelectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3549B5A25E0AED800659DCA /* AppSelectionCollectionViewCell.xib */; };
 		C3552D2B25CCDF4F00869020 /* WorkCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3552D2A25CCDF4F00869020 /* WorkCard.swift */; };
 		C3552D2D25CCED1A00869020 /* ToolGameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3552D2C25CCED1A00869020 /* ToolGameCard.swift */; };
 		C355975425D93C00003E2B17 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355975325D93C00003E2B17 /* AddCardViewController.swift */; };
 		C355BBF425CFEAB0003E95E3 /* ModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BBF325CFEAB0003E95E3 /* ModesViewController.swift */; };
 		C355BBF625CFECE7003E95E3 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BBF525CFECE7003E95E3 /* DashboardViewController.swift */; };
 		C35DD20C25D29E030057F0E1 /* FlashCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35DD20B25D29E030057F0E1 /* FlashCardViewController.swift */; };
+		C371B91425E03910007422BE /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371B91325E03910007422BE /* SourceViewController.swift */; };
 		C3805B6C25CB9E7800518151 /* WorkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3805B6A25CB9E7800518151 /* WorkCollectionViewCell.swift */; };
 		C3805B6D25CB9E7800518151 /* WorkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3805B6B25CB9E7800518151 /* WorkCollectionViewCell.xib */; };
 		C3DB848F25D2179B0074B19B /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB848E25D2179B0074B19B /* AccountViewController.swift */; };
@@ -49,6 +57,7 @@
 		C34C364225D0C78100D7BD2F /* ModeCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		C34C364325D0C78100D7BD2F /* ModeCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModeCardCollectionViewCell.xib; sourceTree = "<group>"; };
 		C34C364625D0CD8B00D7BD2F /* ModeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCard.swift; sourceTree = "<group>"; };
+		C34CFBF225DE6DA500C810EA /* SentencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesViewController.swift; sourceTree = "<group>"; };
 		C34F8EFA25CC4480001EE138 /* ToolGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolGameCollectionViewCell.swift; sourceTree = "<group>"; };
 		C34F8EFB25CC4480001EE138 /* ToolGameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolGameCollectionViewCell.xib; sourceTree = "<group>"; };
 		C350BCC525D3E0E100A4D9CC /* DeckListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckListCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -68,12 +77,19 @@
 		C354818C25D1382E00260008 /* ToolCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCollectionViewCell.swift; sourceTree = "<group>"; };
 		C354818D25D1382E00260008 /* ToolCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolCollectionViewCell.xib; sourceTree = "<group>"; };
 		C354819025D13CD400260008 /* ToolCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolCard.swift; sourceTree = "<group>"; };
+		C3549B5025E0A45300659DCA /* BookSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSelectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		C3549B5125E0A45300659DCA /* BookSelectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookSelectionCollectionViewCell.xib; sourceTree = "<group>"; };
+		C3549B5525E0A5B900659DCA /* SubtitleSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleSelectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		C3549B5625E0A5B900659DCA /* SubtitleSelectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtitleSelectionCollectionViewCell.xib; sourceTree = "<group>"; };
+		C3549B5925E0AED800659DCA /* AppSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSelectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		C3549B5A25E0AED800659DCA /* AppSelectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppSelectionCollectionViewCell.xib; sourceTree = "<group>"; };
 		C3552D2A25CCDF4F00869020 /* WorkCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCard.swift; sourceTree = "<group>"; };
 		C3552D2C25CCED1A00869020 /* ToolGameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolGameCard.swift; sourceTree = "<group>"; };
 		C355975325D93C00003E2B17 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 		C355BBF325CFEAB0003E95E3 /* ModesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
 		C355BBF525CFECE7003E95E3 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		C35DD20B25D29E030057F0E1 /* FlashCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardViewController.swift; sourceTree = "<group>"; };
+		C371B91325E03910007422BE /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
 		C3805B6A25CB9E7800518151 /* WorkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCollectionViewCell.swift; sourceTree = "<group>"; };
 		C3805B6B25CB9E7800518151 /* WorkCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkCollectionViewCell.xib; sourceTree = "<group>"; };
 		C3DB848E25D2179B0074B19B /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +116,7 @@
 		C34C364025D0C70B00D7BD2F /* Modes */ = {
 			isa = PBXGroup;
 			children = (
+				C371B90D25E026FE007422BE /* Sentences */,
 				C34C364125D0C72500D7BD2F /* ModesCard */,
 			);
 			path = Modes;
@@ -196,6 +213,24 @@
 			path = ToolsCard;
 			sourceTree = "<group>";
 		};
+		C3549B4F25E0A41D00659DCA /* BookSelectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				C3549B5025E0A45300659DCA /* BookSelectionCollectionViewCell.swift */,
+				C3549B5125E0A45300659DCA /* BookSelectionCollectionViewCell.xib */,
+			);
+			path = BookSelectionCell;
+			sourceTree = "<group>";
+		};
+		C3549B5425E0A56A00659DCA /* SubtitleSelectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				C3549B5525E0A5B900659DCA /* SubtitleSelectionCollectionViewCell.swift */,
+				C3549B5625E0A5B900659DCA /* SubtitleSelectionCollectionViewCell.xib */,
+			);
+			path = SubtitleSelectionCell;
+			sourceTree = "<group>";
+		};
 		C3552D2925CCDF2100869020 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,8 +255,29 @@
 				C35DD20B25D29E030057F0E1 /* FlashCardViewController.swift */,
 				C355975325D93C00003E2B17 /* AddCardViewController.swift */,
 				C353585025DAB7C6008FC7DD /* DeckListViewController.swift */,
+				C34CFBF225DE6DA500C810EA /* SentencesViewController.swift */,
+				C371B91325E03910007422BE /* SourceViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C371B90D25E026FE007422BE /* Sentences */ = {
+			isa = PBXGroup;
+			children = (
+				C3549B5425E0A56A00659DCA /* SubtitleSelectionCell */,
+				C3549B4F25E0A41D00659DCA /* BookSelectionCell */,
+				C371B90E25E0270A007422BE /* AppSelectionCell */,
+			);
+			path = Sentences;
+			sourceTree = "<group>";
+		};
+		C371B90E25E0270A007422BE /* AppSelectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				C3549B5925E0AED800659DCA /* AppSelectionCollectionViewCell.swift */,
+				C3549B5A25E0AED800659DCA /* AppSelectionCollectionViewCell.xib */,
+			);
+			path = AppSelectionCell;
 			sourceTree = "<group>";
 		};
 		C3805B6925CB9DAA00518151 /* WorkCard */ = {
@@ -329,8 +385,11 @@
 			files = (
 				C354818F25D1382E00260008 /* ToolCollectionViewCell.xib in Resources */,
 				C3523FB925CAD192006886C0 /* LaunchScreen.storyboard in Resources */,
+				C3549B5325E0A45300659DCA /* BookSelectionCollectionViewCell.xib in Resources */,
 				C353585725DABEFB008FC7DD /* VerbCollectionViewCell.xib in Resources */,
 				C3805B6D25CB9E7800518151 /* WorkCollectionViewCell.xib in Resources */,
+				C3549B5C25E0AED800659DCA /* AppSelectionCollectionViewCell.xib in Resources */,
+				C3549B5825E0A5B900659DCA /* SubtitleSelectionCollectionViewCell.xib in Resources */,
 				C3523FB625CAD192006886C0 /* Assets.xcassets in Resources */,
 				C3DB849525D21A340074B19B /* SettingCollectionViewCell.xib in Resources */,
 				C350BCC825D3E0E100A4D9CC /* DeckListCollectionViewCell.xib in Resources */,
@@ -351,9 +410,11 @@
 				C34C364725D0CD8B00D7BD2F /* ModeCard.swift in Sources */,
 				C34C364425D0C78100D7BD2F /* ModeCardCollectionViewCell.swift in Sources */,
 				C353585125DAB7C6008FC7DD /* DeckListViewController.swift in Sources */,
+				C34CFBF325DE6DA500C810EA /* SentencesViewController.swift in Sources */,
 				C353585925DAD691008FC7DD /* VerbCard.swift in Sources */,
 				C350BCC725D3E0E100A4D9CC /* DeckListCollectionViewCell.swift in Sources */,
 				C3DB848F25D2179B0074B19B /* AccountViewController.swift in Sources */,
+				C3549B5225E0A45300659DCA /* BookSelectionCollectionViewCell.swift in Sources */,
 				C353585625DABEFB008FC7DD /* VerbCollectionViewCell.swift in Sources */,
 				C3805B6C25CB9E7800518151 /* WorkCollectionViewCell.swift in Sources */,
 				C3523FAD25CAD18C006886C0 /* AppDelegate.swift in Sources */,
@@ -363,7 +424,9 @@
 				C35DD20C25D29E030057F0E1 /* FlashCardViewController.swift in Sources */,
 				C354818E25D1382E00260008 /* ToolCollectionViewCell.swift in Sources */,
 				C3552D2D25CCED1A00869020 /* ToolGameCard.swift in Sources */,
+				C3549B5B25E0AED800659DCA /* AppSelectionCollectionViewCell.swift in Sources */,
 				C354818A25D1294D00260008 /* ToolsViewController.swift in Sources */,
+				C371B91425E03910007422BE /* SourceViewController.swift in Sources */,
 				C3F19D6425CAD2F30026D960 /* Constant.swift in Sources */,
 				C3DB849425D21A340074B19B /* SettingCollectionViewCell.swift in Sources */,
 				C3EACEE025D919CC009E0A45 /* ShowDeckListButton.swift in Sources */,
@@ -372,6 +435,7 @@
 				C3552D2B25CCDF4F00869020 /* WorkCard.swift in Sources */,
 				C354819125D13CD400260008 /* ToolCard.swift in Sources */,
 				C3DB849725D2230B0074B19B /* SettingCard.swift in Sources */,
+				C3549B5725E0A5B900659DCA /* SubtitleSelectionCollectionViewCell.swift in Sources */,
 				C3F19D6925CAE3760026D960 /* OverviewCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

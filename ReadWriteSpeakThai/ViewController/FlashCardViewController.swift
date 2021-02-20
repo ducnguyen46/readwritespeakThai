@@ -28,7 +28,9 @@ class FlashCardViewController: UIViewController {
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var deckListCollectionView: UICollectionView!
     
-    var i: Int = 1
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

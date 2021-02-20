@@ -23,6 +23,10 @@ class ModesViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var modeCardCollectionView: UICollectionView!
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

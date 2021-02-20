@@ -10,6 +10,7 @@ import UIKit
 
 class DeckListViewController: UIViewController {
     @IBOutlet var parentView: UIView!
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
@@ -21,6 +22,10 @@ class DeckListViewController: UIViewController {
     var isActive: Bool = false
     
     var verbList:[VerbCard] = []
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,29 +62,6 @@ class DeckListViewController: UIViewController {
                 bundle: nil),
             forCellWithReuseIdentifier: "VerbCollectionViewCell")
     
-        //navigation
-        navigationController?.navigationBar.barTintColor = ColorConstant.primaryColor
-        navigationController?.navigationBar.barStyle = UIBarStyle.black
-        
-        navigationItem.title = "Deck Overview"
-        navigationController?.navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor : UIColor.white,
-            NSAttributedString.Key.font : UIFont.systemFont(
-                ofSize: 18,
-                weight: .bold)
-        ]
-        
-        let backRoundButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-        backRoundButton.backgroundColor = UIColor.white
-        backRoundButton.layer.cornerRadius = 0.5 * backRoundButton.bounds.size.width
-        backRoundButton.setImage(UIImage(named: "ic-back"), for: .normal)
-        backRoundButton.addTarget(self, action: #selector(backToPreviousViewController), for: .allEvents)
-        
-        let backBarButton = UIBarButtonItem()
-        backBarButton.customView = backRoundButton
-        
-        navigationItem.leftBarButtonItems = [backBarButton]
-        
         //view
         parentView.backgroundColor = ColorConstant.primaryColor
         contentView.backgroundColor = ColorConstant.lightGray
@@ -95,12 +77,16 @@ class DeckListViewController: UIViewController {
         verbCollectionView.backgroundColor = UIColor.clear
 //        activeButton.addTarget(self, action: #selector(activeDeckList(str:titleLabel.text!)), for: .allEvents)
         activeButton.isHidden = isActive
+        
+        backButton.layer.cornerRadius = 0.5 * backButton.bounds.size.width
+        // action
+        backButton.addTarget(self, action: #selector(backToPreviousViewController), for: .allEvents)
     }
-
+    
     @objc func backToPreviousViewController(){
-        self.navigationController?.popViewController(animated: true)
-        print("he")
+        self.dismiss(animated: true, completion: nil)
     }
+    
     
     @objc func activeDeckList(str: String){
         print(str)

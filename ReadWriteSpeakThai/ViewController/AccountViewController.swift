@@ -19,6 +19,10 @@ class AccountViewController: UIViewController {
     
     let settingCardList: [SettingCard] = SettingCard.getSettingCardList()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         settingCollectionView.register(

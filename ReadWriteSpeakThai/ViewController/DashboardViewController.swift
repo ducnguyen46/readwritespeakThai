@@ -24,6 +24,11 @@ class DashboardViewController: UIViewController {
         
     @IBOutlet weak var workLabel: UILabel!
     @IBOutlet weak var toolGameLabel: UILabel!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
             super.viewDidLoad()
             //registry cell

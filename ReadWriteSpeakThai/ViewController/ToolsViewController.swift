@@ -24,12 +24,17 @@ class ToolsViewController: UIViewController {
     
     let toolCards: [ToolCard] = ToolCard.getToolCards()
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         toolsCollectionView.register(
             UINib(nibName: "ToolCollectionViewCell",
                   bundle: nil),
             forCellWithReuseIdentifier: "ToolCollectionViewCell")
+        
         
         parentView.backgroundColor = ColorConstant.primaryColor
         
