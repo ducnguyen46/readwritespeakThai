@@ -1,0 +1,6 @@
+framework module Pods_ReadWriteSpeakThai {
+  umbrella header "Pods-ReadWriteSpeakThai-umbrella.h"
+
+  export *
+  module * { export * }
+}

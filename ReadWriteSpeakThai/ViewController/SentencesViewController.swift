@@ -17,6 +17,8 @@ class SentencesViewController: UIViewController {
     @IBOutlet weak var sourceButton: UIButton!
     @IBOutlet weak var categoriesButton: UIButton!
     
+    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -32,10 +34,25 @@ class SentencesViewController: UIViewController {
 
         // action
         backButton.addTarget(self, action: #selector(backToPreviousViewController), for: .allEvents)
+        sourceButton.addTarget(self, action: #selector(goToSourcePage(_:)), for: .allTouchEvents)
+        categoriesButton.addTarget(self, action: #selector(goToCategoryPage(_:)), for: .allTouchEvents)
     }
     
     @objc func backToPreviousViewController(){
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func goToSourcePage(_ sender: UIButton){
+        
+        let sourceVC = mainStoryboard.instantiateViewController(identifier: "SourceViewController")
+        sourceVC.modalPresentationStyle = .fullScreen
+        self.present(sourceVC, animated: true, completion: nil)
+    }
+    
+    @objc func goToCategoryPage(_ sender: UIButton){
+        let categoryVC = mainStoryboard.instantiateViewController(identifier: "CategoryViewController")
+        categoryVC.modalPresentationStyle = .fullScreen
+        self.present(categoryVC, animated: true, completion: nil)
     }
     
 }

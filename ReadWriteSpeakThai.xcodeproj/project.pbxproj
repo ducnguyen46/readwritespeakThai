@@ -3,13 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F6CC781AAD5877F448AEF4E /* Pods_ReadWriteSpeakThai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515F1B497B45C8A65C7E96B5 /* Pods_ReadWriteSpeakThai.framework */; };
+		C30D479925E48E970008623F /* ActionControlSentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D479825E48E970008623F /* ActionControlSentence.swift */; };
+		C30D479B25E497FB0008623F /* AudioControlSentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D479A25E497FB0008623F /* AudioControlSentence.swift */; };
+		C30D479D25E4A0D50008623F /* SentenceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D479C25E4A0D50008623F /* SentenceCard.swift */; };
+		C33FB4AC25E3CCA2008E1A93 /* ActionSentenceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33FB4AA25E3CCA2008E1A93 /* ActionSentenceCollectionViewCell.swift */; };
+		C33FB4AD25E3CCA2008E1A93 /* ActionSentenceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33FB4AB25E3CCA2008E1A93 /* ActionSentenceCollectionViewCell.xib */; };
 		C34C2A5925E0BD0C0078AEC4 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C2A5825E0BD0C0078AEC4 /* CategoryViewController.swift */; };
-		C34C2A5F25E0BEF60078AEC4 /* CategorySelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C2A5D25E0BEF60078AEC4 /* CategorySelectionCollectionViewCell.swift */; };
-		C34C2A6025E0BEF60078AEC4 /* CategorySelectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34C2A5E25E0BEF60078AEC4 /* CategorySelectionCollectionViewCell.xib */; };
 		C34C364425D0C78100D7BD2F /* ModeCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C364225D0C78100D7BD2F /* ModeCardCollectionViewCell.swift */; };
 		C34C364525D0C78100D7BD2F /* ModeCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34C364325D0C78100D7BD2F /* ModeCardCollectionViewCell.xib */; };
 		C34C364725D0CD8B00D7BD2F /* ModeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34C364625D0CD8B00D7BD2F /* ModeCard.swift */; };
@@ -44,7 +48,13 @@
 		C355BBF425CFEAB0003E95E3 /* ModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BBF325CFEAB0003E95E3 /* ModesViewController.swift */; };
 		C355BBF625CFECE7003E95E3 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BBF525CFECE7003E95E3 /* DashboardViewController.swift */; };
 		C35DD20C25D29E030057F0E1 /* FlashCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35DD20B25D29E030057F0E1 /* FlashCardViewController.swift */; };
+		C36D8E0925E3F09D004D901E /* SentenceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36D8E0725E3F09D004D901E /* SentenceCollectionViewCell.swift */; };
+		C36D8E0A25E3F09D004D901E /* SentenceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36D8E0825E3F09D004D901E /* SentenceCollectionViewCell.xib */; };
+		C36D8E0E25E41010004D901E /* AudioControlCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36D8E0C25E41010004D901E /* AudioControlCollectionViewCell.swift */; };
+		C36D8E0F25E41010004D901E /* AudioControlCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36D8E0D25E41010004D901E /* AudioControlCollectionViewCell.xib */; };
 		C371B91425E03910007422BE /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371B91325E03910007422BE /* SourceViewController.swift */; };
+		C37ADA9F25E8DFE500067E8F /* CategoryTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37ADA9D25E8DFE500067E8F /* CategoryTagTableViewCell.swift */; };
+		C37ADAA025E8DFE500067E8F /* CategoryTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C37ADA9E25E8DFE500067E8F /* CategoryTagTableViewCell.xib */; };
 		C3805B6C25CB9E7800518151 /* WorkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3805B6A25CB9E7800518151 /* WorkCollectionViewCell.swift */; };
 		C3805B6D25CB9E7800518151 /* WorkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3805B6B25CB9E7800518151 /* WorkCollectionViewCell.xib */; };
 		C3DB848F25D2179B0074B19B /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB848E25D2179B0074B19B /* AccountViewController.swift */; };
@@ -58,9 +68,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EE321EED23620F4EA3FF055 /* Pods-ReadWriteSpeakThai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadWriteSpeakThai.debug.xcconfig"; path = "Target Support Files/Pods-ReadWriteSpeakThai/Pods-ReadWriteSpeakThai.debug.xcconfig"; sourceTree = "<group>"; };
+		2D8EF73E42F7D64790E580C7 /* Pods-ReadWriteSpeakThai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadWriteSpeakThai.release.xcconfig"; path = "Target Support Files/Pods-ReadWriteSpeakThai/Pods-ReadWriteSpeakThai.release.xcconfig"; sourceTree = "<group>"; };
+		515F1B497B45C8A65C7E96B5 /* Pods_ReadWriteSpeakThai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadWriteSpeakThai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30D479825E48E970008623F /* ActionControlSentence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionControlSentence.swift; sourceTree = "<group>"; };
+		C30D479A25E497FB0008623F /* AudioControlSentence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioControlSentence.swift; sourceTree = "<group>"; };
+		C30D479C25E4A0D50008623F /* SentenceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceCard.swift; sourceTree = "<group>"; };
+		C33FB4AA25E3CCA2008E1A93 /* ActionSentenceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSentenceCollectionViewCell.swift; sourceTree = "<group>"; };
+		C33FB4AB25E3CCA2008E1A93 /* ActionSentenceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionSentenceCollectionViewCell.xib; sourceTree = "<group>"; };
 		C34C2A5825E0BD0C0078AEC4 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
-		C34C2A5D25E0BEF60078AEC4 /* CategorySelectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectionCollectionViewCell.swift; sourceTree = "<group>"; };
-		C34C2A5E25E0BEF60078AEC4 /* CategorySelectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategorySelectionCollectionViewCell.xib; sourceTree = "<group>"; };
 		C34C364225D0C78100D7BD2F /* ModeCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		C34C364325D0C78100D7BD2F /* ModeCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModeCardCollectionViewCell.xib; sourceTree = "<group>"; };
 		C34C364625D0CD8B00D7BD2F /* ModeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCard.swift; sourceTree = "<group>"; };
@@ -97,7 +113,13 @@
 		C355BBF325CFEAB0003E95E3 /* ModesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesViewController.swift; sourceTree = "<group>"; };
 		C355BBF525CFECE7003E95E3 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		C35DD20B25D29E030057F0E1 /* FlashCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardViewController.swift; sourceTree = "<group>"; };
+		C36D8E0725E3F09D004D901E /* SentenceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceCollectionViewCell.swift; sourceTree = "<group>"; };
+		C36D8E0825E3F09D004D901E /* SentenceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SentenceCollectionViewCell.xib; sourceTree = "<group>"; };
+		C36D8E0C25E41010004D901E /* AudioControlCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioControlCollectionViewCell.swift; sourceTree = "<group>"; };
+		C36D8E0D25E41010004D901E /* AudioControlCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioControlCollectionViewCell.xib; sourceTree = "<group>"; };
 		C371B91325E03910007422BE /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
+		C37ADA9D25E8DFE500067E8F /* CategoryTagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTagTableViewCell.swift; sourceTree = "<group>"; };
+		C37ADA9E25E8DFE500067E8F /* CategoryTagTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTagTableViewCell.xib; sourceTree = "<group>"; };
 		C3805B6A25CB9E7800518151 /* WorkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCollectionViewCell.swift; sourceTree = "<group>"; };
 		C3805B6B25CB9E7800518151 /* WorkCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkCollectionViewCell.xib; sourceTree = "<group>"; };
 		C3DB848E25D2179B0074B19B /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -115,17 +137,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6CC781AAD5877F448AEF4E /* Pods_ReadWriteSpeakThai.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C09E8395AB71A31823E67EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EE321EED23620F4EA3FF055 /* Pods-ReadWriteSpeakThai.debug.xcconfig */,
+				2D8EF73E42F7D64790E580C7 /* Pods-ReadWriteSpeakThai.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		471F380A72BDD5E70256001E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				515F1B497B45C8A65C7E96B5 /* Pods_ReadWriteSpeakThai.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C33FB4A525E3C4B4008E1A93 /* ActionControl */ = {
+			isa = PBXGroup;
+			children = (
+				C33FB4AA25E3CCA2008E1A93 /* ActionSentenceCollectionViewCell.swift */,
+				C33FB4AB25E3CCA2008E1A93 /* ActionSentenceCollectionViewCell.xib */,
+			);
+			path = ActionControl;
+			sourceTree = "<group>";
+		};
 		C34C2A5A25E0BEA00078AEC4 /* CategoriesCell */ = {
 			isa = PBXGroup;
 			children = (
-				C34C2A5D25E0BEF60078AEC4 /* CategorySelectionCollectionViewCell.swift */,
-				C34C2A5E25E0BEF60078AEC4 /* CategorySelectionCollectionViewCell.xib */,
+				C37ADA9D25E8DFE500067E8F /* CategoryTagTableViewCell.swift */,
+				C37ADA9E25E8DFE500067E8F /* CategoryTagTableViewCell.xib */,
 			);
 			path = CategoriesCell;
 			sourceTree = "<group>";
@@ -172,6 +221,8 @@
 			children = (
 				C3523FAB25CAD18C006886C0 /* ReadWriteSpeakThai */,
 				C3523FAA25CAD18C006886C0 /* Products */,
+				0C09E8395AB71A31823E67EB /* Pods */,
+				471F380A72BDD5E70256001E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,6 +308,9 @@
 				C354819025D13CD400260008 /* ToolCard.swift */,
 				C3DB849625D2230B0074B19B /* SettingCard.swift */,
 				C353585825DAD691008FC7DD /* VerbCard.swift */,
+				C30D479825E48E970008623F /* ActionControlSentence.swift */,
+				C30D479A25E497FB0008623F /* AudioControlSentence.swift */,
+				C30D479C25E4A0D50008623F /* SentenceCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,9 +334,30 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		C36D8E0625E3F078004D901E /* SentencesCell */ = {
+			isa = PBXGroup;
+			children = (
+				C36D8E0725E3F09D004D901E /* SentenceCollectionViewCell.swift */,
+				C36D8E0825E3F09D004D901E /* SentenceCollectionViewCell.xib */,
+			);
+			path = SentencesCell;
+			sourceTree = "<group>";
+		};
+		C36D8E0B25E40FEC004D901E /* AudioControlCell */ = {
+			isa = PBXGroup;
+			children = (
+				C36D8E0C25E41010004D901E /* AudioControlCollectionViewCell.swift */,
+				C36D8E0D25E41010004D901E /* AudioControlCollectionViewCell.xib */,
+			);
+			path = AudioControlCell;
+			sourceTree = "<group>";
+		};
 		C371B90D25E026FE007422BE /* Sentences */ = {
 			isa = PBXGroup;
 			children = (
+				C36D8E0B25E40FEC004D901E /* AudioControlCell */,
+				C36D8E0625E3F078004D901E /* SentencesCell */,
+				C33FB4A525E3C4B4008E1A93 /* ActionControl */,
 				C34C2A5A25E0BEA00078AEC4 /* CategoriesCell */,
 				C3549B5425E0A56A00659DCA /* SubtitleSelectionCell */,
 				C3549B4F25E0A41D00659DCA /* BookSelectionCell */,
@@ -352,9 +427,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3523FBD25CAD193006886C0 /* Build configuration list for PBXNativeTarget "ReadWriteSpeakThai" */;
 			buildPhases = (
+				AD6193DE5FF0AE0A64746B80 /* [CP] Check Pods Manifest.lock */,
 				C3523FA525CAD18C006886C0 /* Sources */,
 				C3523FA625CAD18C006886C0 /* Frameworks */,
 				C3523FA725CAD18C006886C0 /* Resources */,
+				DEFEB7A5D6CB39D12075456A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -372,11 +449,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Nguyen Ngoc Duc";
 				TargetAttributes = {
 					C3523FA825CAD18C006886C0 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -405,6 +483,8 @@
 			files = (
 				C354818F25D1382E00260008 /* ToolCollectionViewCell.xib in Resources */,
 				C3523FB925CAD192006886C0 /* LaunchScreen.storyboard in Resources */,
+				C36D8E0A25E3F09D004D901E /* SentenceCollectionViewCell.xib in Resources */,
+				C36D8E0F25E41010004D901E /* AudioControlCollectionViewCell.xib in Resources */,
 				C3549B5325E0A45300659DCA /* BookSelectionCollectionViewCell.xib in Resources */,
 				C353585725DABEFB008FC7DD /* VerbCollectionViewCell.xib in Resources */,
 				C3805B6D25CB9E7800518151 /* WorkCollectionViewCell.xib in Resources */,
@@ -413,15 +493,58 @@
 				C3523FB625CAD192006886C0 /* Assets.xcassets in Resources */,
 				C3DB849525D21A340074B19B /* SettingCollectionViewCell.xib in Resources */,
 				C350BCC825D3E0E100A4D9CC /* DeckListCollectionViewCell.xib in Resources */,
-				C34C2A6025E0BEF60078AEC4 /* CategorySelectionCollectionViewCell.xib in Resources */,
 				C3F19D6A25CAE3760026D960 /* OverviewCard.xib in Resources */,
 				C34F8EFD25CC4480001EE138 /* ToolGameCollectionViewCell.xib in Resources */,
 				C3523FB425CAD18C006886C0 /* Main.storyboard in Resources */,
 				C34C364525D0C78100D7BD2F /* ModeCardCollectionViewCell.xib in Resources */,
+				C33FB4AD25E3CCA2008E1A93 /* ActionSentenceCollectionViewCell.xib in Resources */,
+				C37ADAA025E8DFE500067E8F /* CategoryTagTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD6193DE5FF0AE0A64746B80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReadWriteSpeakThai-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEFEB7A5D6CB39D12075456A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadWriteSpeakThai/Pods-ReadWriteSpeakThai-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadWriteSpeakThai/Pods-ReadWriteSpeakThai-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadWriteSpeakThai/Pods-ReadWriteSpeakThai-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3523FA525CAD18C006886C0 /* Sources */ = {
@@ -429,8 +552,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C34C364725D0CD8B00D7BD2F /* ModeCard.swift in Sources */,
+				C36D8E0E25E41010004D901E /* AudioControlCollectionViewCell.swift in Sources */,
 				C34C364425D0C78100D7BD2F /* ModeCardCollectionViewCell.swift in Sources */,
 				C353585125DAB7C6008FC7DD /* DeckListViewController.swift in Sources */,
+				C33FB4AC25E3CCA2008E1A93 /* ActionSentenceCollectionViewCell.swift in Sources */,
 				C34CFBF325DE6DA500C810EA /* SentencesViewController.swift in Sources */,
 				C353585925DAD691008FC7DD /* VerbCard.swift in Sources */,
 				C350BCC725D3E0E100A4D9CC /* DeckListCollectionViewCell.swift in Sources */,
@@ -444,7 +569,8 @@
 				C355BBF425CFEAB0003E95E3 /* ModesViewController.swift in Sources */,
 				C3523FAF25CAD18C006886C0 /* SceneDelegate.swift in Sources */,
 				C35DD20C25D29E030057F0E1 /* FlashCardViewController.swift in Sources */,
-				C34C2A5F25E0BEF60078AEC4 /* CategorySelectionCollectionViewCell.swift in Sources */,
+				C30D479925E48E970008623F /* ActionControlSentence.swift in Sources */,
+				C36D8E0925E3F09D004D901E /* SentenceCollectionViewCell.swift in Sources */,
 				C354818E25D1382E00260008 /* ToolCollectionViewCell.swift in Sources */,
 				C3552D2D25CCED1A00869020 /* ToolGameCard.swift in Sources */,
 				C3549B5B25E0AED800659DCA /* AppSelectionCollectionViewCell.swift in Sources */,
@@ -453,13 +579,16 @@
 				C3F19D6425CAD2F30026D960 /* Constant.swift in Sources */,
 				C3DB849425D21A340074B19B /* SettingCollectionViewCell.swift in Sources */,
 				C34C2A5925E0BD0C0078AEC4 /* CategoryViewController.swift in Sources */,
+				C30D479D25E4A0D50008623F /* SentenceCard.swift in Sources */,
 				C3EACEE025D919CC009E0A45 /* ShowDeckListButton.swift in Sources */,
 				C34F8EFC25CC4480001EE138 /* ToolGameCollectionViewCell.swift in Sources */,
 				C355BBF625CFECE7003E95E3 /* DashboardViewController.swift in Sources */,
 				C3552D2B25CCDF4F00869020 /* WorkCard.swift in Sources */,
+				C30D479B25E497FB0008623F /* AudioControlSentence.swift in Sources */,
 				C354819125D13CD400260008 /* ToolCard.swift in Sources */,
 				C3DB849725D2230B0074B19B /* SettingCard.swift in Sources */,
 				C3549B5725E0A5B900659DCA /* SubtitleSelectionCollectionViewCell.swift in Sources */,
+				C37ADA9F25E8DFE500067E8F /* CategoryTagTableViewCell.swift in Sources */,
 				C3F19D6925CAE3760026D960 /* OverviewCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +641,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -572,6 +702,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -602,8 +733,10 @@
 		};
 		C3523FBE25CAD193006886C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EE321EED23620F4EA3FF055 /* Pods-ReadWriteSpeakThai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ReadWriteSpeakThai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -612,6 +745,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ducnguyen46.ReadWriteSpeakThai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -619,8 +753,10 @@
 		};
 		C3523FBF25CAD193006886C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8EF73E42F7D64790E580C7 /* Pods-ReadWriteSpeakThai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ReadWriteSpeakThai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

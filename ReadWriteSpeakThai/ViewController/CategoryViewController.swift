@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import TagListView
 
 class CategoryViewController: UIViewController {
 
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var contentView: UIView!
-    @IBOutlet weak var categoriesCollectionView: UICollectionView!
+    @IBOutlet weak var categoryTableView: UITableView!
+    
     
     let listCategories:[String] = [
         "Popular",
@@ -52,7 +55,45 @@ class CategoryViewController: UIViewController {
         "Travel",
         "Weddings",
         "Women’s fashion",
+        "Popular",
+        "Everything",
+        "Gifts",
+        "Videos",
+        "Animals and pets",
+        "Architecture",
+        "Art",
+        "Cars and motorcycles",
+        "Celebrities",
+        "DIY and crafts",
+        "Design",
+        "Education",
+        "Entertainment",
+        "Food and drink",
+        "Gardening",
+        "Geek",
+        "Hair and beauty",
+        "Health and fitness",
+        "History",
+        "Holidays and events",
+        "Home decor",
+        "Humor",
+        "Illustrations and posters",
+        "Kids and parenting",
+        "Men\\\"s fashion",
+        "Outdoors",
+        "Photography",
+        "Products",
+        "Quotes",
+        "Science and nature",
+        "Sports",
+        "Tattoos",
+        "Technology",
+        "Travel",
+        "Weddings",
+        "Women’s fashion",
     ]
+    var tagList: TagListView = TagListView()
+    var listChoice:[TagView] = []
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -61,66 +102,53 @@ class CategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        categoriesCollectionView.register(
-        UINib(
-            nibName: "CategorySelectionCollectionViewCell",
-            bundle: nil),
-        forCellWithReuseIdentifier: "CategorySelectionCollectionViewCell")
-        categoriesCollectionView.allowsMultipleSelection = true
+        categoryTableView.register(
+            UINib(
+                nibName: "CategoryTagTableViewCell",
+                bundle: nil),
+            forCellReuseIdentifier: "CategoryTagTableViewCell")
+        categoryTableView.backgroundColor = UIColor.clear
+        categoryTableView.allowsSelection = false
+        categoryTableView.bounces = false
+        categoryTableView.tableFooterView = UIView()
             
         parentView.backgroundColor = ColorConstant.primaryColor
         backButton.layer.cornerRadius = 0.5 * backButton.bounds.size.width
-    
+        
         contentView.roundCorners(corners: [.topRight, .topLeft], radius: 30)
-        categoriesCollectionView.backgroundColor = UIColor.clear
+        contentView.backgroundColor = ColorConstant.lightGray
 
         // action
-            backButton.addTarget(self, action: #selector(backToPreviousViewController), for: .allEvents)
+        backButton.addTarget(self, action: #selector(backToPreviousViewController), for: .allEvents)
+        searchButton.addTarget(self, action: #selector(search), for: .allEvents)
     }
         
     @objc func backToPreviousViewController(){
         self.dismiss(animated: true, completion: nil)
     }
+    
+    @objc func search(){
+        tagList.tagViews.map {$0.isSelected = true }
+        listChoice = tagList.selectedTags()
+    }
 
 }
-extension CategoryViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return listCategories.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let categoryCell = categoriesCollectionView.dequeueReusableCell(
-            withReuseIdentifier: "CategorySelectionCollectionViewCell",
-            for: indexPath) as! CategorySelectionCollectionViewCell
-        categoryCell.titleCell.text = listCategories[indexPath.row]
-        return categoryCell
 
+extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let selectCell = collectionView.indexPathsForSelectedItems
-        print(selectCell ?? "HIHI")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let tableCell = categoryTableView.dequeueReusableCell(withIdentifier: "CategoryTagTableViewCell", for: indexPath) as! CategoryTagTableViewCell
+        tableCell.categoryTag.addTags(listCategories)
+//        listChoice = tableCell.listChoice
+        tagList = tableCell.categoryTag
+        return tableCell
     }
+    
+    
 }
 
-extension CategoryViewController: UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let categoryCell = categoriesCollectionView.dequeueReusableCell(
-            withReuseIdentifier: "CategorySelectionCollectionViewCell",
-            for: indexPath) as! CategorySelectionCollectionViewCell
-        categoryCell.titleCell.text = listCategories[indexPath.row]
-        
-        return CGSize(width: 0, height: 30)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 15
-    }
-}
+
