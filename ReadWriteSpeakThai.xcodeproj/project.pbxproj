@@ -55,6 +55,7 @@
 		C371B91425E03910007422BE /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371B91325E03910007422BE /* SourceViewController.swift */; };
 		C37ADA9F25E8DFE500067E8F /* CategoryTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37ADA9D25E8DFE500067E8F /* CategoryTagTableViewCell.swift */; };
 		C37ADAA025E8DFE500067E8F /* CategoryTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C37ADA9E25E8DFE500067E8F /* CategoryTagTableViewCell.xib */; };
+		C37FBC5725EA5A4300B00588 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37FBC5625EA5A4300B00588 /* TabbarController.swift */; };
 		C3805B6C25CB9E7800518151 /* WorkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3805B6A25CB9E7800518151 /* WorkCollectionViewCell.swift */; };
 		C3805B6D25CB9E7800518151 /* WorkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3805B6B25CB9E7800518151 /* WorkCollectionViewCell.xib */; };
 		C3DB848F25D2179B0074B19B /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB848E25D2179B0074B19B /* AccountViewController.swift */; };
@@ -120,6 +121,7 @@
 		C371B91325E03910007422BE /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
 		C37ADA9D25E8DFE500067E8F /* CategoryTagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTagTableViewCell.swift; sourceTree = "<group>"; };
 		C37ADA9E25E8DFE500067E8F /* CategoryTagTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTagTableViewCell.xib; sourceTree = "<group>"; };
+		C37FBC5625EA5A4300B00588 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		C3805B6A25CB9E7800518151 /* WorkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCollectionViewCell.swift; sourceTree = "<group>"; };
 		C3805B6B25CB9E7800518151 /* WorkCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkCollectionViewCell.xib; sourceTree = "<group>"; };
 		C3DB848E25D2179B0074B19B /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				C3F19D6325CAD2F30026D960 /* Constant.swift */,
+				C37FBC5625EA5A4300B00588 /* TabbarController.swift */,
 				C355BBF525CFECE7003E95E3 /* DashboardViewController.swift */,
 				C355BBF325CFEAB0003E95E3 /* ModesViewController.swift */,
 				C354818925D1294D00260008 /* ToolsViewController.swift */,
@@ -584,6 +587,7 @@
 				C34F8EFC25CC4480001EE138 /* ToolGameCollectionViewCell.swift in Sources */,
 				C355BBF625CFECE7003E95E3 /* DashboardViewController.swift in Sources */,
 				C3552D2B25CCDF4F00869020 /* WorkCard.swift in Sources */,
+				C37FBC5725EA5A4300B00588 /* TabbarController.swift in Sources */,
 				C30D479B25E497FB0008623F /* AudioControlSentence.swift in Sources */,
 				C354819125D13CD400260008 /* ToolCard.swift in Sources */,
 				C3DB849725D2230B0074B19B /* SettingCard.swift in Sources */,
