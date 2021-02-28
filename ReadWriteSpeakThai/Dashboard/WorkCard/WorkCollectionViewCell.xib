@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -27,10 +29,11 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaW-2z-6Q9">
                                 <rect key="frame" x="131" y="15" width="30" height="30"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <state key="normal" image="ic-more"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="EaW-2z-6Q9" secondAttribute="trailing" constant="15" id="NX4-8J-bVH"/>
                             <constraint firstItem="8Gh-h5-Bry" firstAttribute="leading" secondItem="pma-og-ONJ" secondAttribute="leading" constant="15" id="UA3-vQ-sWA"/>
@@ -42,13 +45,13 @@
                     </view>
                 </subviews>
             </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="pma-og-ONJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BJ7-dl-xoz"/>
                 <constraint firstAttribute="trailing" secondItem="pma-og-ONJ" secondAttribute="trailing" id="Sda-Pd-qpi"/>
                 <constraint firstAttribute="bottom" secondItem="pma-og-ONJ" secondAttribute="bottom" id="jcK-T2-oc2"/>
                 <constraint firstItem="pma-og-ONJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sgM-gY-0nQ"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="315" height="89"/>
             <connections>
                 <outlet property="actionButton" destination="EaW-2z-6Q9" id="MJw-kq-0Kt"/>
@@ -58,4 +61,13 @@
             <point key="canvasLocation" x="278.98550724637681" y="101.11607142857143"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="ic-more" width="7" height="12"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

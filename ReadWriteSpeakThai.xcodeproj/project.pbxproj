@@ -53,11 +53,16 @@
 		C36D8E0E25E41010004D901E /* AudioControlCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36D8E0C25E41010004D901E /* AudioControlCollectionViewCell.swift */; };
 		C36D8E0F25E41010004D901E /* AudioControlCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36D8E0D25E41010004D901E /* AudioControlCollectionViewCell.xib */; };
 		C371B91425E03910007422BE /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C371B91325E03910007422BE /* SourceViewController.swift */; };
+		C376BA4F25EB517700BB18A0 /* PopupToneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376BA4D25EB517700BB18A0 /* PopupToneTableViewCell.swift */; };
+		C376BA5025EB517700BB18A0 /* PopupToneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C376BA4E25EB517700BB18A0 /* PopupToneTableViewCell.xib */; };
+		C376BA5325EB570F00BB18A0 /* ToneTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C376BA5225EB570F00BB18A0 /* ToneTableCell.swift */; };
 		C37ADA9F25E8DFE500067E8F /* CategoryTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37ADA9D25E8DFE500067E8F /* CategoryTagTableViewCell.swift */; };
 		C37ADAA025E8DFE500067E8F /* CategoryTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C37ADA9E25E8DFE500067E8F /* CategoryTagTableViewCell.xib */; };
 		C37FBC5725EA5A4300B00588 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37FBC5625EA5A4300B00588 /* TabbarController.swift */; };
 		C3805B6C25CB9E7800518151 /* WorkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3805B6A25CB9E7800518151 /* WorkCollectionViewCell.swift */; };
 		C3805B6D25CB9E7800518151 /* WorkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3805B6B25CB9E7800518151 /* WorkCollectionViewCell.xib */; };
+		C3879AF925EAD95F00467F59 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3879AF725EAD95F00467F59 /* PopupViewController.swift */; };
+		C3879AFA25EAD95F00467F59 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3879AF825EAD95F00467F59 /* PopupViewController.xib */; };
 		C3DB848F25D2179B0074B19B /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB848E25D2179B0074B19B /* AccountViewController.swift */; };
 		C3DB849425D21A340074B19B /* SettingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB849225D21A340074B19B /* SettingCollectionViewCell.swift */; };
 		C3DB849525D21A340074B19B /* SettingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DB849325D21A340074B19B /* SettingCollectionViewCell.xib */; };
@@ -119,11 +124,16 @@
 		C36D8E0C25E41010004D901E /* AudioControlCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioControlCollectionViewCell.swift; sourceTree = "<group>"; };
 		C36D8E0D25E41010004D901E /* AudioControlCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioControlCollectionViewCell.xib; sourceTree = "<group>"; };
 		C371B91325E03910007422BE /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
+		C376BA4D25EB517700BB18A0 /* PopupToneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupToneTableViewCell.swift; sourceTree = "<group>"; };
+		C376BA4E25EB517700BB18A0 /* PopupToneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupToneTableViewCell.xib; sourceTree = "<group>"; };
+		C376BA5225EB570F00BB18A0 /* ToneTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneTableCell.swift; sourceTree = "<group>"; };
 		C37ADA9D25E8DFE500067E8F /* CategoryTagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTagTableViewCell.swift; sourceTree = "<group>"; };
 		C37ADA9E25E8DFE500067E8F /* CategoryTagTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTagTableViewCell.xib; sourceTree = "<group>"; };
 		C37FBC5625EA5A4300B00588 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		C3805B6A25CB9E7800518151 /* WorkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCollectionViewCell.swift; sourceTree = "<group>"; };
 		C3805B6B25CB9E7800518151 /* WorkCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkCollectionViewCell.xib; sourceTree = "<group>"; };
+		C3879AF725EAD95F00467F59 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		C3879AF825EAD95F00467F59 /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
 		C3DB848E25D2179B0074B19B /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		C3DB849225D21A340074B19B /* SettingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewCell.swift; sourceTree = "<group>"; };
 		C3DB849325D21A340074B19B /* SettingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -313,6 +323,7 @@
 				C30D479825E48E970008623F /* ActionControlSentence.swift */,
 				C30D479A25E497FB0008623F /* AudioControlSentence.swift */,
 				C30D479C25E4A0D50008623F /* SentenceCard.swift */,
+				C376BA5225EB570F00BB18A0 /* ToneTableCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -358,6 +369,7 @@
 		C371B90D25E026FE007422BE /* Sentences */ = {
 			isa = PBXGroup;
 			children = (
+				C3879AF625EAD92B00467F59 /* Sentence Popup */,
 				C36D8E0B25E40FEC004D901E /* AudioControlCell */,
 				C36D8E0625E3F078004D901E /* SentencesCell */,
 				C33FB4A525E3C4B4008E1A93 /* ActionControl */,
@@ -385,6 +397,17 @@
 				C3805B6B25CB9E7800518151 /* WorkCollectionViewCell.xib */,
 			);
 			path = WorkCard;
+			sourceTree = "<group>";
+		};
+		C3879AF625EAD92B00467F59 /* Sentence Popup */ = {
+			isa = PBXGroup;
+			children = (
+				C3879AF725EAD95F00467F59 /* PopupViewController.swift */,
+				C3879AF825EAD95F00467F59 /* PopupViewController.xib */,
+				C376BA4D25EB517700BB18A0 /* PopupToneTableViewCell.swift */,
+				C376BA4E25EB517700BB18A0 /* PopupToneTableViewCell.xib */,
+			);
+			path = "Sentence Popup";
 			sourceTree = "<group>";
 		};
 		C3DB849025D219F20074B19B /* Account */ = {
@@ -488,6 +511,7 @@
 				C3523FB925CAD192006886C0 /* LaunchScreen.storyboard in Resources */,
 				C36D8E0A25E3F09D004D901E /* SentenceCollectionViewCell.xib in Resources */,
 				C36D8E0F25E41010004D901E /* AudioControlCollectionViewCell.xib in Resources */,
+				C376BA5025EB517700BB18A0 /* PopupToneTableViewCell.xib in Resources */,
 				C3549B5325E0A45300659DCA /* BookSelectionCollectionViewCell.xib in Resources */,
 				C353585725DABEFB008FC7DD /* VerbCollectionViewCell.xib in Resources */,
 				C3805B6D25CB9E7800518151 /* WorkCollectionViewCell.xib in Resources */,
@@ -498,6 +522,7 @@
 				C350BCC825D3E0E100A4D9CC /* DeckListCollectionViewCell.xib in Resources */,
 				C3F19D6A25CAE3760026D960 /* OverviewCard.xib in Resources */,
 				C34F8EFD25CC4480001EE138 /* ToolGameCollectionViewCell.xib in Resources */,
+				C3879AFA25EAD95F00467F59 /* PopupViewController.xib in Resources */,
 				C3523FB425CAD18C006886C0 /* Main.storyboard in Resources */,
 				C34C364525D0C78100D7BD2F /* ModeCardCollectionViewCell.xib in Resources */,
 				C33FB4AD25E3CCA2008E1A93 /* ActionSentenceCollectionViewCell.xib in Resources */,
@@ -572,15 +597,18 @@
 				C355BBF425CFEAB0003E95E3 /* ModesViewController.swift in Sources */,
 				C3523FAF25CAD18C006886C0 /* SceneDelegate.swift in Sources */,
 				C35DD20C25D29E030057F0E1 /* FlashCardViewController.swift in Sources */,
+				C376BA4F25EB517700BB18A0 /* PopupToneTableViewCell.swift in Sources */,
 				C30D479925E48E970008623F /* ActionControlSentence.swift in Sources */,
 				C36D8E0925E3F09D004D901E /* SentenceCollectionViewCell.swift in Sources */,
 				C354818E25D1382E00260008 /* ToolCollectionViewCell.swift in Sources */,
 				C3552D2D25CCED1A00869020 /* ToolGameCard.swift in Sources */,
+				C3879AF925EAD95F00467F59 /* PopupViewController.swift in Sources */,
 				C3549B5B25E0AED800659DCA /* AppSelectionCollectionViewCell.swift in Sources */,
 				C354818A25D1294D00260008 /* ToolsViewController.swift in Sources */,
 				C371B91425E03910007422BE /* SourceViewController.swift in Sources */,
 				C3F19D6425CAD2F30026D960 /* Constant.swift in Sources */,
 				C3DB849425D21A340074B19B /* SettingCollectionViewCell.swift in Sources */,
+				C376BA5325EB570F00BB18A0 /* ToneTableCell.swift in Sources */,
 				C34C2A5925E0BD0C0078AEC4 /* CategoryViewController.swift in Sources */,
 				C30D479D25E4A0D50008623F /* SentenceCard.swift in Sources */,
 				C3EACEE025D919CC009E0A45 /* ShowDeckListButton.swift in Sources */,

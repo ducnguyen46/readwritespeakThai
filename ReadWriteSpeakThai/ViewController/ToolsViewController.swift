@@ -12,6 +12,7 @@ class ToolsViewController: UIViewController {
     
     let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
     
+    
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var appNameLabel: UILabel!
     @IBOutlet weak var screenNameLabel: UILabel!

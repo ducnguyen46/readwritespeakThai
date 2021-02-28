@@ -54,6 +54,15 @@ class SentenceStudyViewController: UIViewController {
     @objc func backToPreviousViewController(){
             self.dismiss(animated: true, completion: nil)
     }
+    
+    @objc func showTonePopUp(_ sender: UIButton){
+        let tonePopupVC: PopupViewController = PopupViewController(nibName: "PopupViewController", bundle: nil)
+        
+        tonePopupVC.modalPresentationStyle = .overCurrentContext
+        tonePopupVC.modalTransitionStyle = .crossDissolve
+        
+        self.present(tonePopupVC, animated: true, completion: nil)
+    }
 
 }
 
@@ -77,6 +86,11 @@ extension SentenceStudyViewController: UICollectionViewDelegate, UICollectionVie
             let actionCell = actionControlCollectionView.dequeueReusableCell(withReuseIdentifier: "ActionSentenceCollectionViewCell", for: indexPath) as! ActionSentenceCollectionViewCell
             actionCell.imageView.image = UIImage(named: listActionControl[indexPath.row].image!)
             actionCell.titleLabel.text = listActionControl[indexPath.row].title
+            
+            if(indexPath.row == 2){
+                actionCell.actionButton.addTarget(self, action: #selector(showTonePopUp(_:)), for: .touchUpInside)
+            }
+            
             return actionCell
             
         case audioControlCollectionView:
@@ -119,19 +133,6 @@ extension SentenceStudyViewController: UICollectionViewDelegateFlowLayout {
             )
         }
     }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        switch collectionView {
-//        case actionControlCollectionView:
-//            return 15
-//
-//        case audioControlCollectionView:
-//            return 15
-//
-//        default:
-//            return 10
-//        }
-//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         switch collectionView {

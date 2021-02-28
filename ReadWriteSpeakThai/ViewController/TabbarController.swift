@@ -23,6 +23,7 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate {
         
         self.delegate = self
         mainTabbar.tintColor = ColorConstant.lightRed
+        mainTabbar.layer.cornerRadius = 20
         
         dashboardVC = mainStoryboard.instantiateViewController(identifier: "DashboardViewController")
         modesVC = mainStoryboard.instantiateViewController(identifier: "ModesViewController")
