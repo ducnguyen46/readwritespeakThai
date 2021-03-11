@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Free Sentences",
+    "key": "F",
+    "group": "App",
+    "disabled": false
+  },
+  {
+    "name": "Maleficient",
+    "key": "Maleficient",
+    "group": "Subtitles",
+    "disabled": false
+  },
+  {
+    "name": "Manee Mana 1",
+    "key": "B-Manee1",
+    "group": "Book Manee Mana",
+    "disabled": false
+  },
+  {
+    "name": "Manee Mana 2",
+    "key": "B-Manee2",
+    "group": "Book Manee Mana",
+    "disabled": true
+  },
+  {
+    "name": "Conversations",
+    "key": "C",
+    "group": "App",
+    "disabled": false
+  }
+]

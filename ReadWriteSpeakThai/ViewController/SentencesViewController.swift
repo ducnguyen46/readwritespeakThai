@@ -16,6 +16,7 @@ class SentencesViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var sourceButton: UIButton!
     @IBOutlet weak var categoriesButton: UIButton!
+    @IBOutlet weak var showSentenceButton: UIButton!
     
     let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
     

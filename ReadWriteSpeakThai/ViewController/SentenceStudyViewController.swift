@@ -15,13 +15,19 @@ class SentenceStudyViewController: UIViewController {
     @IBOutlet weak var actionControlCollectionView: UICollectionView!
     @IBOutlet weak var sentenceCollectionView: UICollectionView!
     @IBOutlet weak var audioControlCollectionView: UICollectionView!
+    @IBOutlet weak var wordCollectionView: UICollectionView!
+    
+    let apiService: APIService = APIService()
     
     let listActionControl = ActionControlSentence().getACSList()
     let listAudioControl = AudioControlSentence().getACSList()
-    let listSentenceCard = SentenceCard().getSentenceCardList()
+    var listSentence: [Sentence] = []
+    var listWord: [Word] = []
+    var listWordInSentence: [Word] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initData()
         
         actionControlCollectionView.register(
             UINib(
@@ -38,6 +44,12 @@ class SentenceStudyViewController: UIViewController {
                 nibName: "AudioControlCollectionViewCell",
                 bundle: nil),
             forCellWithReuseIdentifier: "AudioControlCollectionViewCell")
+        wordCollectionView.register(
+            UINib(
+                nibName: "WordSentenceCollectionViewCell",
+                bundle: nil),
+            forCellWithReuseIdentifier: "WordSentenceCollectionViewCell")
+        
         
         parentView.backgroundColor = ColorConstant.primaryColor
         backButton.layer.cornerRadius = 0.5 * backButton.bounds.size.width
@@ -49,6 +61,11 @@ class SentenceStudyViewController: UIViewController {
         audioControlCollectionView.backgroundColor = UIColor.white
         // action
         backButton.addTarget(self, action: #selector(backToPreviousViewController), for: .allEvents)
+    }
+    
+    func initData(){
+        listSentence = apiService.getAllSentences()
+        listWord = apiService.getAllWords()
     }
             
     @objc func backToPreviousViewController(){
@@ -63,6 +80,23 @@ class SentenceStudyViewController: UIViewController {
         
         self.present(tonePopupVC, animated: true, completion: nil)
     }
+    
+    func getPronounceFromSentence(sentence: Sentence) -> String {
+        listWordInSentence = []
+        var pronounce: String = ""
+        for i in 0...sentence.words!.count - 1 {
+            let wordIndex = sentence.words![i]
+            if wordIndex is Int {
+                let word = listWord.filter {$0.id == (wordIndex as! Int)}[0]
+                // them tu vao
+                listWordInSentence.append(word)
+                pronounce.append(" " + word.simpleThai[0])
+            } else if wordIndex is String{
+                pronounce.append((wordIndex as! String))
+            }
+        }
+        return pronounce
+    }
 
 }
 
@@ -76,7 +110,7 @@ extension SentenceStudyViewController: UICollectionViewDelegate, UICollectionVie
             return listAudioControl.count
             
         default:
-            return listSentenceCard.count
+            return listSentence.count
         }
     }
     
@@ -100,10 +134,13 @@ extension SentenceStudyViewController: UICollectionViewDelegate, UICollectionVie
             return audioCell
             
         default:
+            let sentence = listSentence[indexPath.row]
+            let pronounce = getPronounceFromSentence(sentence: sentence)
+            
             let sentenceCell = sentenceCollectionView.dequeueReusableCell(withReuseIdentifier: "SentenceCollectionViewCell", for: indexPath) as! SentenceCollectionViewCell
-            sentenceCell.sentencesLabel.text = listSentenceCard[indexPath.row].sentence
-            sentenceCell.englishLabel.text = listSentenceCard[indexPath.row].englishSentence
-            sentenceCell.pronounceLabel.text = listSentenceCard[indexPath.row].thaiPronounce
+            sentenceCell.sentencesLabel.text = sentence.thai
+            sentenceCell.englishLabel.text = sentence.english
+            sentenceCell.pronounceLabel.text = pronounce
             return sentenceCell
         }
     }

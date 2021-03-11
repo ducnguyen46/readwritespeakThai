@@ -1,0 +1,87 @@
+[
+  {
+    "id": 0,
+    "name": "All",
+    "order": 0
+  },
+  {
+    "id": 11,
+    "name": "Expressions",
+    "order": 20
+  },
+  {
+    "id": 13,
+    "name": "Food",
+    "order": 55
+  },
+  {
+    "id": 14,
+    "name": "Basic chat",
+    "order": 15
+  },
+  {
+    "id": 15,
+    "name": "Directions",
+    "order": 150
+  },
+  {
+    "id": 16,
+    "name": "Emergencies",
+    "order": 160
+  },
+  {
+    "id": 17,
+    "name": "Shopping",
+    "order": 170
+  },
+  {
+    "id": 18,
+    "name": "Family",
+    "order": 180
+  },
+  {
+    "id": 19,
+    "name": "Dating",
+    "order": 190
+  },
+  {
+    "id": 1,
+    "name": "Misc.",
+    "order": 1000
+  },
+  {
+    "id": 20,
+    "name": "Feelings",
+    "order": 200
+  },
+  {
+    "id": 21,
+    "name": "Weather",
+    "order": 210
+  },
+  {
+    "id": 2,
+    "name": "Time",
+    "order": 30
+  },
+  {
+    "id": 5,
+    "name": "Animals",
+    "order": 50
+  },
+  {
+    "id": 6,
+    "name": "Accomodation",
+    "order": 60
+  },
+  {
+    "id": 8,
+    "name": "Questions",
+    "order": 10
+  },
+  {
+    "id": 9,
+    "name": "The body",
+    "order": 80
+  }
+]

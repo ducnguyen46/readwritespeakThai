@@ -1,0 +1,175 @@
+[
+  {
+    "Name": "๐",
+    "NameThai": "ศูนย์",
+    "Arabic": "0",
+    "Romanization": "sŏon",
+    "comment": "",
+    "tone": "R",
+    "Id": 1
+  },
+  {
+    "Name": "๑",
+    "NameThai": "หนึ่ง",
+    "Arabic": "1",
+    "Romanization": "nèung",
+    "comment": "",
+    "tone": "L",
+    "Id": 2
+  },
+  {
+    "Name": "๒",
+    "NameThai": "สอง",
+    "Arabic": "2",
+    "Romanization": "sŏng",
+    "comment": "",
+    "tone": "R",
+    "Id": 3
+  },
+  {
+    "Name": "๓",
+    "NameThai": "สาม",
+    "Arabic": "3",
+    "Romanization": "săam",
+    "comment": "",
+    "tone": "R",
+    "Id": 4
+  },
+  {
+    "Name": "๔",
+    "NameThai": "สี่",
+    "Arabic": "4",
+    "Romanization": "sèe",
+    "comment": "",
+    "tone": "L",
+    "Id": 5
+  },
+  {
+    "Name": "๕",
+    "NameThai": "ห้า",
+    "Arabic": "5",
+    "Romanization": "hâa",
+    "comment": "",
+    "tone": "F",
+    "Id": 6
+  },
+  {
+    "Name": "๖",
+    "NameThai": "หก",
+    "Arabic": "6",
+    "Romanization": "hòk",
+    "comment": "",
+    "tone": "L",
+    "Id": 7
+  },
+  {
+    "Name": "๗",
+    "NameThai": "เจ็ด",
+    "Arabic": "7",
+    "Romanization": "jèt",
+    "comment": "",
+    "tone": "L",
+    "Id": 8
+  },
+  {
+    "Name": "๘",
+    "NameThai": "แปด",
+    "Arabic": "8",
+    "Romanization": "bpàet",
+    "comment": "",
+    "tone": "L",
+    "Id": 9
+  },
+  {
+    "Name": "๙",
+    "NameThai": "เก้า",
+    "Arabic": "9",
+    "Romanization": "gâo",
+    "comment": "",
+    "tone": "F",
+    "Id": 10
+  },
+  {
+    "Name": "๑๐",
+    "NameThai": "สิบ",
+    "Arabic": "10",
+    "Romanization": "sìp",
+    "comment": "",
+    "tone": "L",
+    "Id": 11
+  },
+  {
+    "Name": "๑๑",
+    "NameThai": "สิบเอ็ด",
+    "Arabic": "11",
+    "Romanization": "sìp èt",
+    "comment": "Special",
+    "tone": "L",
+    "Id": 12
+  },
+  {
+    "Name": "๒๐",
+    "NameThai": "ยี่สิบ",
+    "Arabic": "20",
+    "Romanization": "yêe sìp",
+    "comment": "Special",
+    "NameMultiThai": "ยี่ สิบ",
+    "tone": "FL",
+    "Id": 13
+  },
+  {
+    "Name": "๒๑",
+    "NameThai": "ยี่สิบเอ็ด",
+    "Arabic": "21",
+    "Romanization": "yêe-sìp-èt",
+    "comment": "Special",
+    "NameMultiThai": "ยี่ สิบเอ็ด",
+    "tone": "FL",
+    "Id": 14
+  },
+  {
+    "Name": "๑๐๐",
+    "NameThai": "ร้อย",
+    "Arabic": "100",
+    "Romanization": "rói",
+    "comment": "",
+    "tone": "H",
+    "Id": 15
+  },
+  {
+    "Name": "๑๐๐๐",
+    "NameThai": "พัน",
+    "Arabic": "1000",
+    "Romanization": "pan",
+    "comment": "",
+    "tone": "M",
+    "Id": 16
+  },
+  {
+    "Name": "๑๐,๐๐๐",
+    "NameThai": "หมื่น",
+    "Arabic": "10 000",
+    "Romanization": "mèun",
+    "comment": "",
+    "tone": "L",
+    "Id": 17
+  },
+  {
+    "Name": "๑๐๐,๐๐๐",
+    "NameThai": "แสน",
+    "Arabic": "100 000",
+    "Romanization": "săen",
+    "comment": "",
+    "tone": "R",
+    "Id": 18
+  },
+  {
+    "Name": "๑,๐๐๐,๐๐๐",
+    "NameThai": "ล้าน",
+    "Arabic": "1 000 000",
+    "Romanization": "láan",
+    "comment": "",
+    "tone": "H",
+    "Id": 19
+  }
+]

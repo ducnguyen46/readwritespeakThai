@@ -17,81 +17,8 @@ class CategoryViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var categoryTableView: UITableView!
     
-    
-    let listCategories:[String] = [
-        "Popular",
-        "Everything",
-        "Gifts",
-        "Videos",
-        "Animals and pets",
-        "Architecture",
-        "Art",
-        "Cars and motorcycles",
-        "Celebrities",
-        "DIY and crafts",
-        "Design",
-        "Education",
-        "Entertainment",
-        "Food and drink",
-        "Gardening",
-        "Geek",
-        "Hair and beauty",
-        "Health and fitness",
-        "History",
-        "Holidays and events",
-        "Home decor",
-        "Humor",
-        "Illustrations and posters",
-        "Kids and parenting",
-        "Men\\\"s fashion",
-        "Outdoors",
-        "Photography",
-        "Products",
-        "Quotes",
-        "Science and nature",
-        "Sports",
-        "Tattoos",
-        "Technology",
-        "Travel",
-        "Weddings",
-        "Women’s fashion",
-        "Popular",
-        "Everything",
-        "Gifts",
-        "Videos",
-        "Animals and pets",
-        "Architecture",
-        "Art",
-        "Cars and motorcycles",
-        "Celebrities",
-        "DIY and crafts",
-        "Design",
-        "Education",
-        "Entertainment",
-        "Food and drink",
-        "Gardening",
-        "Geek",
-        "Hair and beauty",
-        "Health and fitness",
-        "History",
-        "Holidays and events",
-        "Home decor",
-        "Humor",
-        "Illustrations and posters",
-        "Kids and parenting",
-        "Men\\\"s fashion",
-        "Outdoors",
-        "Photography",
-        "Products",
-        "Quotes",
-        "Science and nature",
-        "Sports",
-        "Tattoos",
-        "Technology",
-        "Travel",
-        "Weddings",
-        "Women’s fashion",
-    ]
+    var apiService: APIService?
+    var listCategories: [Category]!
     var tagList: TagListView = TagListView()
     var listChoice:[TagView] = []
     
@@ -121,6 +48,14 @@ class CategoryViewController: UIViewController {
         // action
         backButton.addTarget(self, action: #selector(backToPreviousViewController), for: .allEvents)
         searchButton.addTarget(self, action: #selector(search), for: .allEvents)
+        
+        //
+        initData()
+    }
+    
+    func initData(){
+        apiService = APIService()
+        listCategories = apiService!.getAllCategories()
     }
         
     @objc func backToPreviousViewController(){
@@ -142,8 +77,9 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableCell = categoryTableView.dequeueReusableCell(withIdentifier: "CategoryTagTableViewCell", for: indexPath) as! CategoryTagTableViewCell
-        tableCell.categoryTag.addTags(listCategories)
-//        listChoice = tableCell.listChoice
+        for category in listCategories {
+            tableCell.categoryTag.addTag(category.name!)
+        }
         tagList = tableCell.categoryTag
         return tableCell
     }
