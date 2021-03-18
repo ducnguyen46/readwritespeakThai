@@ -3,23 +3,58 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03F6349BC7F1C0F3BDFD63082CCE32DB /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574C856DE74C058582A181ADA724817C /* FTS4.swift */; };
+		0F5F3BF00208AAFFDA1A5F7B2AC7BF37 /* Pods-ReadWriteSpeakThai-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED0ED215D0ABEC523EE38AEB89824DC /* Pods-ReadWriteSpeakThai-dummy.m */; };
+		13DC37325FD7C005D5757A7A24879CFB /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEE761AABC69F70DE19E90D7B771BDF /* Expression.swift */; };
+		16E32D96D226F5CA5ECE9021B4448A2C /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2173EBC08F00D97EDEC9429CA660105E /* Connection.swift */; };
+		17BF40FDB4F951D58C5C6675E58FA797 /* Pods-ReadWriteSpeakThai-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 970B59FFAF21A7CFCE36AE37DA580D90 /* Pods-ReadWriteSpeakThai-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18808F9C139BA0E9059E72980F0BF908 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD8AF91E4E729FE4E24FF7D77BA1E586 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		188E0D4F7200FED3C7A1245F9F913072 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87197729BC63F72D302888961CC59FC8 /* Coding.swift */; };
+		1B13B36FAC4CB8F57794A2B328FDA679 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D586422AD9A7F2E0B3DFCC65D388EB2 /* CoreFunctions.swift */; };
+		2AD89EB64EBE771113D484778E1ECB2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2C4F38367FEF4F7C72224D9EB87B7F71 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296DF84839DFCDD2CA63348006F0A710 /* Blob.swift */; };
+		31AAD13A75FA67A504E265924E542827 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8566BB4B7D2043113D63390D1A8669D0 /* Statement.swift */; };
+		348B481DC980D7B5252368E2A54CFBF9 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE4367334FF140449B0DA95A3CD9C4D /* Foundation.swift */; };
+		444D048C8F52A4002F068AE6198AA5B7 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C85D52CC70AB839AA8B8802791A029 /* Query.swift */; };
+		4A50D35274D871E14260F93489F87E32 /* SQLiteObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A1EB44EF1EB131725BAD5B4107B103 /* SQLiteObjc.m */; };
+		4E3EDCB1C27B3725FD8AEFD7E61B9E17 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4ADBD8681E49515F3469CE413791EE /* RTree.swift */; };
+		5AB7AA2D47C8BD4ED779FB58ADD2EB19 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB90FC02FCD70B6F3FB0CA04384F9CE0 /* Operators.swift */; };
+		5BA891FB2BE2492499DD30FAD3D2F399 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA5F7B31DBFA656056C16E5A8FE756 /* Value.swift */; };
+		5D1D42009E941070E4EDDE947A881181 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8C1D55AAAA3A9E158E9E152BB8A1BA /* Errors.swift */; };
+		5F75157A5075DECD1D4512F9A6744CA6 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = D121A33C3BCEC11B8A0BF887F39357C5 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		67F339D752FFF174485AB6F96EC6FA7E /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E0ED80D06A6088EEFE28D5A7AEF2A8 /* SQLite.swift-dummy.m */; };
+		79E43357E56514CD6FE8A6F4B1D28C2E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255E4E25237FF223CF00C9E8DBB4E9F /* Helpers.swift */; };
 		7A2F9FA43C98BDDB92887CD8F811A31C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		9A7CDCB42F63D306240C43533C510C91 /* Pods-ReadWriteSpeakThai-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 970B59FFAF21A7CFCE36AE37DA580D90 /* Pods-ReadWriteSpeakThai-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6EC3DF1E275D0757F3C498DA60FA33B /* TagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C7BC265C0A73A1B0A1A1FF9133A08 /* TagListView-dummy.m */; };
-		BFE6B9CF9F86CB8ED12DC0AD7C263631 /* Pods-ReadWriteSpeakThai-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED0ED215D0ABEC523EE38AEB89824DC /* Pods-ReadWriteSpeakThai-dummy.m */; };
-		CD58C1C3C464C6FB428B78EB5F211504 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D873E920F6CAC3D63428190C85520012 /* TagListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1BED80D223F6331B2A8FF8C641C0D9 /* TagListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8857C7EFEC671C6D23BACB10087FA7A /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140835403A990A860AC89009FE22FBBC /* TagView.swift */; };
-		E6BBD02DE6D603EA8028A046B28896A4 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B655803A4195E1538C6DEB7ECF85AB9 /* TagListView.swift */; };
-		F9EAAF9FBB7DB084E9A21122C3E62125 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B936D3582080F16C711B18AC3B8DC0DF /* CloseButton.swift */; };
+		8C6BBE622771EB3AAD6B360ED555E329 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9B3A040DEACD188FBA57F28AFAADB057 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B57151A270DACD9F968CA0EFA7AFC66 /* AggregateFunctions.swift */; };
+		A42659683986F68D9D4F244F1DB71C2F /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB179B31AD19F620EE48A29233AC1C0B /* FTS5.swift */; };
+		A6EC3DF1E275D0757F3C498DA60FA33B /* TagListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B25AC068497A4B99A54AA3922FEB0D /* TagListView-dummy.m */; };
+		A966409E4EB7EB56CBE6C9DFA0FC5B94 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA24C543EF7E84D787B5289AFE854C /* DateAndTimeFunctions.swift */; };
+		B1D89872AC365C78155FF44EE9F28FEF /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BB2DB35C6B86FC272EB2209B7205E04 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C64E97D5FC0802B08D7CA36AEC74A422 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758C83D44F2C1722FCC165868F6F97B /* CustomFunctions.swift */; };
+		D6E6E2AA38E0E6B0B7D1E0891F4FD12D /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852470D475CBA89C3DDE32A89D864DE0 /* Setter.swift */; };
+		D873E920F6CAC3D63428190C85520012 /* TagListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 790E0FCDC059D913C931474AEC0A896A /* TagListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8857C7EFEC671C6D23BACB10087FA7A /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998A68AC0ECE1C0F890D49B2723EAC7 /* TagView.swift */; };
+		E6BBD02DE6D603EA8028A046B28896A4 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F4EA9480D7A975DD0AB82C5D3C566D /* TagListView.swift */; };
+		EE966B1A61C1960A3BBC22A783C27272 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FABC0407F194BEC0F5C680106471B7A /* Collation.swift */; };
+		EF5E32C13CFA779B953F8F81AE3C67D6 /* SQLiteObjc.h in Headers */ = {isa = PBXBuildFile; fileRef = DDBA8479B4D95DF817758A2C9DDB0D94 /* SQLiteObjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6BB6C198A2522FF0633261964EB2A24 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A0A4F306CE5B2CD6C67CF60DAF3A3 /* Schema.swift */; };
+		F9EAAF9FBB7DB084E9A21122C3E62125 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46535183211773271853540E414BD1E /* CloseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		663C8187D99C30DEA2BBF99F57CBAB4B /* PBXContainerItemProxy */ = {
+		8244ABA10B5DC0DCDB20243BD50997AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F2C1776D90B62B156DB52C41A5C419C;
+			remoteInfo = SQLite.swift;
+		};
+		AE21C80D349F8747E9EFDE9CD6802036 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -29,32 +64,81 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		045D3F2A783D7E5D0CAC261974781719 /* TagListView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagListView.modulemap; sourceTree = "<group>"; };
-		140835403A990A860AC89009FE22FBBC /* TagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagView.swift; path = TagListView/TagView.swift; sourceTree = "<group>"; };
-		1F617BAF872BFE162ECDC698EBE5A91E /* TagListView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagListView.debug.xcconfig; sourceTree = "<group>"; };
+		01E0ED80D06A6088EEFE28D5A7AEF2A8 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		1758C83D44F2C1722FCC165868F6F97B /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		1C09959F5401117478367ECC6E5290A6 /* TagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-prefix.pch"; sourceTree = "<group>"; };
+		2173EBC08F00D97EDEC9429CA660105E /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
 		22248689607CDA9FE5A85076273F5227 /* Pods-ReadWriteSpeakThai.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ReadWriteSpeakThai.modulemap"; sourceTree = "<group>"; };
-		4A8BA78D82439BEB2C0E4D02897F4192 /* TagListView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-prefix.pch"; sourceTree = "<group>"; };
-		4E1C7BC265C0A73A1B0A1A1FF9133A08 /* TagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagListView-dummy.m"; sourceTree = "<group>"; };
-		60A4BCFF63E99003522EAE8D89F898F6 /* TagListView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagListView.release.xcconfig; sourceTree = "<group>"; };
+		26B25AC068497A4B99A54AA3922FEB0D /* TagListView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TagListView-dummy.m"; sourceTree = "<group>"; };
+		296DF84839DFCDD2CA63348006F0A710 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		33F23AD5B39F0D899B37879E6CD0E90E /* TagListView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagListView.release.xcconfig; sourceTree = "<group>"; };
+		3802BE58F740239E9CD35BC6A79F2E2D /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		3A024EE90FD523E70C311EF8EA8A6EFF /* SQLite.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SQLite.swift-Info.plist"; sourceTree = "<group>"; };
+		3D586422AD9A7F2E0B3DFCC65D388EB2 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		4BB2DB35C6B86FC272EB2209B7205E04 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		4C66B024E21330A2200F5E38AD21851D /* TagListView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TagListView-Info.plist"; sourceTree = "<group>"; };
+		574C856DE74C058582A181ADA724817C /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		64F4EA9480D7A975DD0AB82C5D3C566D /* TagListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagListView.swift; path = TagListView/TagListView.swift; sourceTree = "<group>"; };
 		655AA32FE5B1858F3CF96137F3BA5EBC /* Pods-ReadWriteSpeakThai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReadWriteSpeakThai.release.xcconfig"; sourceTree = "<group>"; };
 		68B0163556F121EE5DEABB7612FB2AA1 /* Pods-ReadWriteSpeakThai-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReadWriteSpeakThai-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6B57151A270DACD9F968CA0EFA7AFC66 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		6D4ADBD8681E49515F3469CE413791EE /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		6DEA5F7B31DBFA656056C16E5A8FE756 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		72C85D52CC70AB839AA8B8802791A029 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		748E910C43DBA84E1FA1AC2607EC08B3 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		76219D2FF751E04BDFAAE582F6ACEB17 /* TagListView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TagListView.modulemap; sourceTree = "<group>"; };
+		790E0FCDC059D913C931474AEC0A896A /* TagListView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-umbrella.h"; sourceTree = "<group>"; };
 		7ED0ED215D0ABEC523EE38AEB89824DC /* Pods-ReadWriteSpeakThai-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReadWriteSpeakThai-dummy.m"; sourceTree = "<group>"; };
-		85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B655803A4195E1538C6DEB7ECF85AB9 /* TagListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagListView.swift; path = TagListView/TagListView.swift; sourceTree = "<group>"; };
+		7FABC0407F194BEC0F5C680106471B7A /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		852470D475CBA89C3DDE32A89D864DE0 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		8566BB4B7D2043113D63390D1A8669D0 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TagListView.framework; path = TagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87197729BC63F72D302888961CC59FC8 /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
+		8A8C1D55AAAA3A9E158E9E152BB8A1BA /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
 		927F70E1399A12B1439585C4D9382DFF /* Pods-ReadWriteSpeakThai-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReadWriteSpeakThai-frameworks.sh"; sourceTree = "<group>"; };
 		970B59FFAF21A7CFCE36AE37DA580D90 /* Pods-ReadWriteSpeakThai-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReadWriteSpeakThai-umbrella.h"; sourceTree = "<group>"; };
-		9C80B5DB4DC0F712F5127E60C8FEB36F /* TagListView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TagListView-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3FA6E72DD76BE86A74F43F709D57C4B /* Pods-ReadWriteSpeakThai-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReadWriteSpeakThai-Info.plist"; sourceTree = "<group>"; };
-		B936D3582080F16C711B18AC3B8DC0DF /* CloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloseButton.swift; path = TagListView/CloseButton.swift; sourceTree = "<group>"; };
+		AB90FC02FCD70B6F3FB0CA04384F9CE0 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		ACAD67B6A58A39154637F5C0AB479ABF /* SQLite.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.debug.xcconfig; sourceTree = "<group>"; };
+		B255E4E25237FF223CF00C9E8DBB4E9F /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
+		BA4A0A4F306CE5B2CD6C67CF60DAF3A3 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		BEE4367334FF140449B0DA95A3CD9C4D /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
 		C29E0DBD8938A4CEFB664E8DF881E566 /* Pods-ReadWriteSpeakThai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReadWriteSpeakThai.debug.xcconfig"; sourceTree = "<group>"; };
+		C46535183211773271853540E414BD1E /* CloseButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloseButton.swift; path = TagListView/CloseButton.swift; sourceTree = "<group>"; };
+		C72ED98F29D7C542465C64AD030DF5A7 /* TagListView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TagListView.debug.xcconfig; sourceTree = "<group>"; };
+		CB179B31AD19F620EE48A29233AC1C0B /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
+		D121A33C3BCEC11B8A0BF887F39357C5 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
 		D69A1AF918D9BE1A0433619837729677 /* Pods-ReadWriteSpeakThai-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReadWriteSpeakThai-acknowledgements.plist"; sourceTree = "<group>"; };
-		F2917D1C4101442861D8887BAED96FFD /* Pods_ReadWriteSpeakThai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadWriteSpeakThai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA1BED80D223F6331B2A8FF8C641C0D9 /* TagListView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TagListView-umbrella.h"; sourceTree = "<group>"; };
+		D998A68AC0ECE1C0F890D49B2723EAC7 /* TagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagView.swift; path = TagListView/TagView.swift; sourceTree = "<group>"; };
+		DBA6A9406DB06686F9B1E0FDCB719BB7 /* SQLite.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.release.xcconfig; sourceTree = "<group>"; };
+		DDBA8479B4D95DF817758A2C9DDB0D94 /* SQLiteObjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLiteObjc.h; path = Sources/SQLiteObjc/include/SQLiteObjc.h; sourceTree = "<group>"; };
+		EAEE761AABC69F70DE19E90D7B771BDF /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		F2917D1C4101442861D8887BAED96FFD /* Pods_ReadWriteSpeakThai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReadWriteSpeakThai.framework; path = "Pods-ReadWriteSpeakThai.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A1EB44EF1EB131725BAD5B4107B103 /* SQLiteObjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SQLiteObjc.m; path = Sources/SQLiteObjc/SQLiteObjc.m; sourceTree = "<group>"; };
+		F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7BA24C543EF7E84D787B5289AFE854C /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
+		FD8AF91E4E729FE4E24FF7D77BA1E586 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8BDB6EE77D78955EE52004CEDD6A664D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD89EB64EBE771113D484778E1ECB2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1DC26BE8ED6BB3E57EC282209CB9866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6BBE622771EB3AAD6B360ED555E329 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1703ECBE2030D3AA1DC701DBEEB2AED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,49 +147,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F42302BA21945D72B40825D53C1AEA46 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CD58C1C3C464C6FB428B78EB5F211504 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10E6513477AFE7FCF33F0D2CAECE4D67 /* TagListView */ = {
+		0B812C7D64B6811D0A929E7E745913C8 /* TagListView */ = {
 			isa = PBXGroup;
 			children = (
-				B936D3582080F16C711B18AC3B8DC0DF /* CloseButton.swift */,
-				8B655803A4195E1538C6DEB7ECF85AB9 /* TagListView.swift */,
-				140835403A990A860AC89009FE22FBBC /* TagView.swift */,
-				3422A480CA2E4A3BA8EA27A4DE5188A3 /* Support Files */,
+				C46535183211773271853540E414BD1E /* CloseButton.swift */,
+				64F4EA9480D7A975DD0AB82C5D3C566D /* TagListView.swift */,
+				D998A68AC0ECE1C0F890D49B2723EAC7 /* TagView.swift */,
+				6B768E6402A0FA932A037C56FE123B35 /* Support Files */,
 			);
+			name = TagListView;
 			path = TagListView;
 			sourceTree = "<group>";
 		};
-		217EC39BA4F71DE31A11E62061855C17 /* Pods */ = {
+		25BA9CCF51AE9C5E004BA5FB5E5E802A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				10E6513477AFE7FCF33F0D2CAECE4D67 /* TagListView */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		3422A480CA2E4A3BA8EA27A4DE5188A3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				045D3F2A783D7E5D0CAC261974781719 /* TagListView.modulemap */,
-				4E1C7BC265C0A73A1B0A1A1FF9133A08 /* TagListView-dummy.m */,
-				9C80B5DB4DC0F712F5127E60C8FEB36F /* TagListView-Info.plist */,
-				4A8BA78D82439BEB2C0E4D02897F4192 /* TagListView-prefix.pch */,
-				FA1BED80D223F6331B2A8FF8C641C0D9 /* TagListView-umbrella.h */,
-				1F617BAF872BFE162ECDC698EBE5A91E /* TagListView.debug.xcconfig */,
-				60A4BCFF63E99003522EAE8D89F898F6 /* TagListView.release.xcconfig */,
+				748E910C43DBA84E1FA1AC2607EC08B3 /* SQLite.swift.modulemap */,
+				01E0ED80D06A6088EEFE28D5A7AEF2A8 /* SQLite.swift-dummy.m */,
+				3A024EE90FD523E70C311EF8EA8A6EFF /* SQLite.swift-Info.plist */,
+				3802BE58F740239E9CD35BC6A79F2E2D /* SQLite.swift-prefix.pch */,
+				FD8AF91E4E729FE4E24FF7D77BA1E586 /* SQLite.swift-umbrella.h */,
+				ACAD67B6A58A39154637F5C0AB479ABF /* SQLite.swift.debug.xcconfig */,
+				DBA6A9406DB06686F9B1E0FDCB719BB7 /* SQLite.swift.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/TagListView";
+			path = "../Target Support Files/SQLite.swift";
+			sourceTree = "<group>";
+		};
+		37C3EDE33D5E6B4A8318B8B8332CD429 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F7599277D143D74B59F70C799AADB10 /* SQLite.swift */,
+				0B812C7D64B6811D0A929E7E745913C8 /* TagListView */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -114,6 +192,73 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		6B61573A28137F4DB3324EE307CE1379 /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				6B57151A270DACD9F968CA0EFA7AFC66 /* AggregateFunctions.swift */,
+				296DF84839DFCDD2CA63348006F0A710 /* Blob.swift */,
+				87197729BC63F72D302888961CC59FC8 /* Coding.swift */,
+				7FABC0407F194BEC0F5C680106471B7A /* Collation.swift */,
+				2173EBC08F00D97EDEC9429CA660105E /* Connection.swift */,
+				3D586422AD9A7F2E0B3DFCC65D388EB2 /* CoreFunctions.swift */,
+				1758C83D44F2C1722FCC165868F6F97B /* CustomFunctions.swift */,
+				F7BA24C543EF7E84D787B5289AFE854C /* DateAndTimeFunctions.swift */,
+				8A8C1D55AAAA3A9E158E9E152BB8A1BA /* Errors.swift */,
+				EAEE761AABC69F70DE19E90D7B771BDF /* Expression.swift */,
+				BEE4367334FF140449B0DA95A3CD9C4D /* Foundation.swift */,
+				D121A33C3BCEC11B8A0BF887F39357C5 /* fts3_tokenizer.h */,
+				574C856DE74C058582A181ADA724817C /* FTS4.swift */,
+				CB179B31AD19F620EE48A29233AC1C0B /* FTS5.swift */,
+				B255E4E25237FF223CF00C9E8DBB4E9F /* Helpers.swift */,
+				AB90FC02FCD70B6F3FB0CA04384F9CE0 /* Operators.swift */,
+				72C85D52CC70AB839AA8B8802791A029 /* Query.swift */,
+				6D4ADBD8681E49515F3469CE413791EE /* RTree.swift */,
+				BA4A0A4F306CE5B2CD6C67CF60DAF3A3 /* Schema.swift */,
+				852470D475CBA89C3DDE32A89D864DE0 /* Setter.swift */,
+				4BB2DB35C6B86FC272EB2209B7205E04 /* SQLite.h */,
+				DDBA8479B4D95DF817758A2C9DDB0D94 /* SQLiteObjc.h */,
+				F5A1EB44EF1EB131725BAD5B4107B103 /* SQLiteObjc.m */,
+				8566BB4B7D2043113D63390D1A8669D0 /* Statement.swift */,
+				6DEA5F7B31DBFA656056C16E5A8FE756 /* Value.swift */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		6B768E6402A0FA932A037C56FE123B35 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76219D2FF751E04BDFAAE582F6ACEB17 /* TagListView.modulemap */,
+				26B25AC068497A4B99A54AA3922FEB0D /* TagListView-dummy.m */,
+				4C66B024E21330A2200F5E38AD21851D /* TagListView-Info.plist */,
+				1C09959F5401117478367ECC6E5290A6 /* TagListView-prefix.pch */,
+				790E0FCDC059D913C931474AEC0A896A /* TagListView-umbrella.h */,
+				C72ED98F29D7C542465C64AD030DF5A7 /* TagListView.debug.xcconfig */,
+				33F23AD5B39F0D899B37879E6CD0E90E /* TagListView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TagListView";
+			sourceTree = "<group>";
+		};
+		7F7599277D143D74B59F70C799AADB10 /* SQLite.swift */ = {
+			isa = PBXGroup;
+			children = (
+				6B61573A28137F4DB3324EE307CE1379 /* standard */,
+				25BA9CCF51AE9C5E004BA5FB5E5E802A /* Support Files */,
+			);
+			name = SQLite.swift;
+			path = SQLite.swift;
+			sourceTree = "<group>";
+		};
+		93882289AEC4E341EFF9C7BF608B6D9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2917D1C4101442861D8887BAED96FFD /* Pods_ReadWriteSpeakThai.framework */,
+				F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.framework */,
+				85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C3D1150BBCD73E74F226F473E90E623F /* Targets Support Files */ = {
@@ -129,8 +274,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				217EC39BA4F71DE31A11E62061855C17 /* Pods */,
-				DA7EB07AD312E367398F470F71E08AC6 /* Products */,
+				37C3EDE33D5E6B4A8318B8B8332CD429 /* Pods */,
+				93882289AEC4E341EFF9C7BF608B6D9F /* Products */,
 				C3D1150BBCD73E74F226F473E90E623F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -141,15 +286,6 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DA7EB07AD312E367398F470F71E08AC6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F2917D1C4101442861D8887BAED96FFD /* Pods_ReadWriteSpeakThai.framework */,
-				85E4C71ED52304F1AB0503E80CD9CB1E /* TagListView.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FD1EB4A563DB05D4AFBCCC82C11CF5C0 /* Pods-ReadWriteSpeakThai */ = {
@@ -172,11 +308,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7A0FDB58673766F2D4CF26AFFEA6770C /* Headers */ = {
+		394EC38AC7D7FD09DF99A517BAB406C9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A7CDCB42F63D306240C43533C510C91 /* Pods-ReadWriteSpeakThai-umbrella.h in Headers */,
+				17BF40FDB4F951D58C5C6675E58FA797 /* Pods-ReadWriteSpeakThai-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E96E7F98796026C6760BA3D13C69C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F75157A5075DECD1D4512F9A6744CA6 /* fts3_tokenizer.h in Headers */,
+				B1D89872AC365C78155FF44EE9F28FEF /* SQLite.h in Headers */,
+				18808F9C139BA0E9059E72980F0BF908 /* SQLite.swift-umbrella.h in Headers */,
+				EF5E32C13CFA779B953F8F81AE3C67D6 /* SQLiteObjc.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,21 +340,40 @@
 /* Begin PBXNativeTarget section */
 		3C0AB0E34D3AE8177E8E6FB657BA9128 /* Pods-ReadWriteSpeakThai */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 030F9D011C0F22D6189DEC082B182E69 /* Build configuration list for PBXNativeTarget "Pods-ReadWriteSpeakThai" */;
+			buildConfigurationList = A3437B9C2AE7B9C75F84800A580F784B /* Build configuration list for PBXNativeTarget "Pods-ReadWriteSpeakThai" */;
 			buildPhases = (
-				7A0FDB58673766F2D4CF26AFFEA6770C /* Headers */,
-				4910943C0CF32A9209888BEA68B81E2A /* Sources */,
-				F42302BA21945D72B40825D53C1AEA46 /* Frameworks */,
-				D3A1BAF972616C29955388ADE43C710C /* Resources */,
+				394EC38AC7D7FD09DF99A517BAB406C9 /* Headers */,
+				86EFD6296971E65198DE9C11BBDDDBF5 /* Sources */,
+				8BDB6EE77D78955EE52004CEDD6A664D /* Frameworks */,
+				20071597738FF7FE8471BF37C7AE96EB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2F47F5136886A79105FFBFE07C3123B5 /* PBXTargetDependency */,
+				D159FA9EED37B4EABF6EC38F37A263E2 /* PBXTargetDependency */,
+				554E5B117757BA402925490FCBC3D4A2 /* PBXTargetDependency */,
 			);
 			name = "Pods-ReadWriteSpeakThai";
 			productName = "Pods-ReadWriteSpeakThai";
 			productReference = F2917D1C4101442861D8887BAED96FFD /* Pods_ReadWriteSpeakThai.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E1D3A8318F603D191D121F70943FF08 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
+			buildPhases = (
+				96E96E7F98796026C6760BA3D13C69C9 /* Headers */,
+				B91BEE056ED605FA41420BC2F6F79D91 /* Sources */,
+				A1DC26BE8ED6BB3E57EC282209CB9866 /* Frameworks */,
+				437C6008F3714B5A8E869C50746FC132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLite.swift;
+			productName = SQLite.swift;
+			productReference = F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B43A58FC22C898DE29F6E12FE9636507 /* TagListView */ = {
@@ -235,10 +401,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -246,25 +412,33 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DA7EB07AD312E367398F470F71E08AC6 /* Products */;
+			productRefGroup = 93882289AEC4E341EFF9C7BF608B6D9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3C0AB0E34D3AE8177E8E6FB657BA9128 /* Pods-ReadWriteSpeakThai */,
+				3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */,
 				B43A58FC22C898DE29F6E12FE9636507 /* TagListView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6BC538A98D210BCB26CE139DFBE834A8 /* Resources */ = {
+		20071597738FF7FE8471BF37C7AE96EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3A1BAF972616C29955388ADE43C710C /* Resources */ = {
+		437C6008F3714B5A8E869C50746FC132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC538A98D210BCB26CE139DFBE834A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -274,11 +448,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4910943C0CF32A9209888BEA68B81E2A /* Sources */ = {
+		86EFD6296971E65198DE9C11BBDDDBF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE6B9CF9F86CB8ED12DC0AD7C263631 /* Pods-ReadWriteSpeakThai-dummy.m in Sources */,
+				0F5F3BF00208AAFFDA1A5F7B2AC7BF37 /* Pods-ReadWriteSpeakThai-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B91BEE056ED605FA41420BC2F6F79D91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3A040DEACD188FBA57F28AFAADB057 /* AggregateFunctions.swift in Sources */,
+				2C4F38367FEF4F7C72224D9EB87B7F71 /* Blob.swift in Sources */,
+				188E0D4F7200FED3C7A1245F9F913072 /* Coding.swift in Sources */,
+				EE966B1A61C1960A3BBC22A783C27272 /* Collation.swift in Sources */,
+				16E32D96D226F5CA5ECE9021B4448A2C /* Connection.swift in Sources */,
+				1B13B36FAC4CB8F57794A2B328FDA679 /* CoreFunctions.swift in Sources */,
+				C64E97D5FC0802B08D7CA36AEC74A422 /* CustomFunctions.swift in Sources */,
+				A966409E4EB7EB56CBE6C9DFA0FC5B94 /* DateAndTimeFunctions.swift in Sources */,
+				5D1D42009E941070E4EDDE947A881181 /* Errors.swift in Sources */,
+				13DC37325FD7C005D5757A7A24879CFB /* Expression.swift in Sources */,
+				348B481DC980D7B5252368E2A54CFBF9 /* Foundation.swift in Sources */,
+				03F6349BC7F1C0F3BDFD63082CCE32DB /* FTS4.swift in Sources */,
+				A42659683986F68D9D4F244F1DB71C2F /* FTS5.swift in Sources */,
+				79E43357E56514CD6FE8A6F4B1D28C2E /* Helpers.swift in Sources */,
+				5AB7AA2D47C8BD4ED779FB58ADD2EB19 /* Operators.swift in Sources */,
+				444D048C8F52A4002F068AE6198AA5B7 /* Query.swift in Sources */,
+				4E3EDCB1C27B3725FD8AEFD7E61B9E17 /* RTree.swift in Sources */,
+				F6BB6C198A2522FF0633261964EB2A24 /* Schema.swift in Sources */,
+				D6E6E2AA38E0E6B0B7D1E0891F4FD12D /* Setter.swift in Sources */,
+				67F339D752FFF174485AB6F96EC6FA7E /* SQLite.swift-dummy.m in Sources */,
+				4A50D35274D871E14260F93489F87E32 /* SQLiteObjc.m in Sources */,
+				31AAD13A75FA67A504E265924E542827 /* Statement.swift in Sources */,
+				5BA891FB2BE2492499DD30FAD3D2F399 /* Value.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,11 +500,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2F47F5136886A79105FFBFE07C3123B5 /* PBXTargetDependency */ = {
+		554E5B117757BA402925490FCBC3D4A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TagListView;
 			target = B43A58FC22C898DE29F6E12FE9636507 /* TagListView */;
-			targetProxy = 663C8187D99C30DEA2BBF99F57CBAB4B /* PBXContainerItemProxy */;
+			targetProxy = AE21C80D349F8747E9EFDE9CD6802036 /* PBXContainerItemProxy */;
+		};
+		D159FA9EED37B4EABF6EC38F37A263E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLite.swift;
+			target = 3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */;
+			targetProxy = 8244ABA10B5DC0DCDB20243BD50997AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -367,9 +577,81 @@
 			};
 			name = Release;
 		};
+		15418D497C951AE519FE18044E619CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA6A9406DB06686F9B1E0FDCB719BB7 /* SQLite.swift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/SQLite.swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				PRODUCT_MODULE_NAME = SQLite;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		252E2277E27BE5D144DB352DA0EC3E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29E0DBD8938A4CEFB664E8DF881E566 /* Pods-ReadWriteSpeakThai.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ReadWriteSpeakThai/Pods-ReadWriteSpeakThai-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ReadWriteSpeakThai/Pods-ReadWriteSpeakThai.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		480ED7A85E569838B67575A837B1BD39 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60A4BCFF63E99003522EAE8D89F898F6 /* TagListView.release.xcconfig */;
+			baseConfigurationReference = 33F23AD5B39F0D899B37879E6CD0E90E /* TagListView.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -382,7 +664,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TagListView/TagListView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,7 +684,41 @@
 			};
 			name = Release;
 		};
-		9A54261E40CAB94E250BC76D2B16F53D /* Release */ = {
+		6FE594D3975D89F427F5BADE89FBA9D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACAD67B6A58A39154637F5C0AB479ABF /* SQLite.swift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/SQLite.swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				PRODUCT_MODULE_NAME = SQLite;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89465FEF112D237364AE8341CBD27112 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 655AA32FE5B1858F3CF96137F3BA5EBC /* Pods-ReadWriteSpeakThai.release.xcconfig */;
 			buildSettings = {
@@ -442,7 +758,7 @@
 		};
 		B95255CFE23BB552B35A1E9E09172CFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F617BAF872BFE162ECDC698EBE5A91E /* TagListView.debug.xcconfig */;
+			baseConfigurationReference = C72ED98F29D7C542465C64AD030DF5A7 /* TagListView.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -455,7 +771,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TagListView/TagListView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TagListView/TagListView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,55 +856,9 @@
 			};
 			name = Debug;
 		};
-		FD0374625EDA025FE22C60DE8485B5AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C29E0DBD8938A4CEFB664E8DF881E566 /* Pods-ReadWriteSpeakThai.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ReadWriteSpeakThai/Pods-ReadWriteSpeakThai-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ReadWriteSpeakThai/Pods-ReadWriteSpeakThai.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		030F9D011C0F22D6189DEC082B182E69 /* Build configuration list for PBXNativeTarget "Pods-ReadWriteSpeakThai" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FD0374625EDA025FE22C60DE8485B5AD /* Debug */,
-				9A54261E40CAB94E250BC76D2B16F53D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -603,6 +873,24 @@
 			buildConfigurations = (
 				B95255CFE23BB552B35A1E9E09172CFA /* Debug */,
 				480ED7A85E569838B67575A837B1BD39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E1D3A8318F603D191D121F70943FF08 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE594D3975D89F427F5BADE89FBA9D3 /* Debug */,
+				15418D497C951AE519FE18044E619CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3437B9C2AE7B9C75F84800A580F784B /* Build configuration list for PBXNativeTarget "Pods-ReadWriteSpeakThai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				252E2277E27BE5D144DB352DA0EC3E4A /* Debug */,
+				89465FEF112D237364AE8341CBD27112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

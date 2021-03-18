@@ -7,5 +7,6 @@ target 'ReadWriteSpeakThai' do
 
   # Pods for ReadWriteSpeakThai
 pod 'TagListView'
+pod 'SQLite.swift'
 
 end

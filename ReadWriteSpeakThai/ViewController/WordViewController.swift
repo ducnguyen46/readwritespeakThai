@@ -10,20 +10,33 @@ import UIKit
 
 class WordViewController: UIViewController {
     @IBOutlet var parentView: UIView!
-    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var wordBoardCollectionView: UICollectionView!
     
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var coinValueLabel: UILabel!
     let listWordBoardCard = WordBoardCard.getListWordBoardCard()
-    
+    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    let db = Database()
+    var user: User!
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        user = db.getUser()
+        coinValueLabel.text = "\(user.coin)"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         wordBoardCollectionView.register(UINib(nibName: "WordBoardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "WordBoardCollectionViewCell")
-        
+        contentView.backgroundColor = ColorConstant.lightGray
+        contentView.roundCorners(corners: [.topLeft, .topRight], radius: 30.0)
+        backButton.layer.cornerRadius = 0.5 * backButton.bounds.size.width
+        backButton.addTarget(self, action: #selector(backToPreviousViewController), for: .allEvents)
+    }
+    @objc func backToPreviousViewController(){
+        self.dismiss(animated: true, completion: nil)
     }
 }
 

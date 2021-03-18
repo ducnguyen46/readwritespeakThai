@@ -28,7 +28,7 @@ class CategoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        initData()
         categoryTableView.register(
             UINib(
                 nibName: "CategoryTagTableViewCell",
@@ -50,12 +50,13 @@ class CategoryViewController: UIViewController {
         searchButton.addTarget(self, action: #selector(search), for: .allEvents)
         
         //
-        initData()
+        
     }
     
     func initData(){
         apiService = APIService()
         listCategories = apiService!.getAllCategories()
+        print("list cate \(listCategories.count)")
     }
         
     @objc func backToPreviousViewController(){
@@ -63,8 +64,8 @@ class CategoryViewController: UIViewController {
     }
     
     @objc func search(){
-        tagList.tagViews.map {$0.isSelected = true }
-        listChoice = tagList.selectedTags()
+//        tagList.tagViews.map {$0.isSelected = true }
+//        listChoice = tagList.selectedTags()
     }
 
 }
@@ -78,9 +79,11 @@ extension CategoryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableCell = categoryTableView.dequeueReusableCell(withIdentifier: "CategoryTagTableViewCell", for: indexPath) as! CategoryTagTableViewCell
         for category in listCategories {
-            tableCell.categoryTag.addTag(category.name!)
+            tableCell.categoryTag.addTag(category.name)
         }
         tagList = tableCell.categoryTag
+        listChoice = tableCell.listChoice
+        print(listChoice.count)
         return tableCell
     }
     

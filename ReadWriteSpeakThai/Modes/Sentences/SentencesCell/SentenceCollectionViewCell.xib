@@ -12,29 +12,29 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SentenceCollectionViewCell" customModule="ReadWriteSpeakThai" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="121" height="121"/>
+            <rect key="frame" x="0.0" y="0.0" width="218" height="218"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="121" height="121"/>
+                <rect key="frame" x="0.0" y="0.0" width="218" height="218"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDC-RZ-37K">
-                        <rect key="frame" x="10" y="10" width="101" height="91"/>
+                        <rect key="frame" x="10" y="10" width="198" height="188"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0F5-96-gJP">
-                                <rect key="frame" x="10" y="-0.5" width="81" height="36"/>
+                                <rect key="frame" x="20" y="48" width="158" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJp-rD-lTP">
-                                <rect key="frame" x="10" y="45.5" width="81" height="19.5"/>
+                                <rect key="frame" x="20" y="94" width="158" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mS7-KX-hV3">
-                                <rect key="frame" x="10" y="70" width="81" height="21.5"/>
+                                <rect key="frame" x="20" y="118.5" width="158" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -46,6 +46,7 @@
                             <constraint firstItem="mS7-KX-hV3" firstAttribute="centerX" secondItem="LDC-RZ-37K" secondAttribute="centerX" id="7yY-89-434"/>
                             <constraint firstItem="mS7-KX-hV3" firstAttribute="top" secondItem="SJp-rD-lTP" secondAttribute="bottom" constant="5" id="B6M-2M-J1j"/>
                             <constraint firstItem="SJp-rD-lTP" firstAttribute="top" secondItem="LDC-RZ-37K" secondAttribute="centerY" id="FZe-rz-Ktq"/>
+                            <constraint firstItem="0F5-96-gJP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="LDC-RZ-37K" secondAttribute="top" constant="10" id="FzE-Fr-M35"/>
                             <constraint firstItem="mS7-KX-hV3" firstAttribute="width" secondItem="LDC-RZ-37K" secondAttribute="width" multiplier="0.8" id="UpF-yy-uy3"/>
                             <constraint firstItem="0F5-96-gJP" firstAttribute="width" secondItem="LDC-RZ-37K" secondAttribute="width" multiplier="0.8" id="ZWW-yP-oqq"/>
                             <constraint firstItem="SJp-rD-lTP" firstAttribute="top" secondItem="0F5-96-gJP" secondAttribute="bottom" constant="10" id="n2J-jG-9Qc"/>
@@ -62,14 +63,14 @@
                 <constraint firstItem="LDC-RZ-37K" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="K0L-dA-Bnv"/>
                 <constraint firstAttribute="bottom" secondItem="LDC-RZ-37K" secondAttribute="bottom" constant="20" id="omV-DK-y9y"/>
             </constraints>
-            <size key="customSize" width="121" height="121"/>
+            <size key="customSize" width="218" height="218"/>
             <connections>
                 <outlet property="englishLabel" destination="SJp-rD-lTP" id="9Hq-ih-w2S"/>
                 <outlet property="parentView" destination="LDC-RZ-37K" id="I8j-hy-gIu"/>
                 <outlet property="pronounceLabel" destination="mS7-KX-hV3" id="8Nd-kg-dDC"/>
                 <outlet property="sentencesLabel" destination="0F5-96-gJP" id="I8H-iA-SmR"/>
             </connections>
-            <point key="canvasLocation" x="189.13043478260872" y="81.361607142857139"/>
+            <point key="canvasLocation" x="259.4202898550725" y="113.83928571428571"/>
         </collectionViewCell>
     </objects>
     <resources>

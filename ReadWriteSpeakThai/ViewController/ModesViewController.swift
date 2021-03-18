@@ -23,13 +23,20 @@ class ModesViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var modeCardCollectionView: UICollectionView!
     
+    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    let db = Database()
+    var user: User!
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        user = db.getUser()
+        coinValueLabel.text = "\(user.coin)"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        user = db.getUser()
         modeCardCollectionView.register(
             UINib(
                 nibName: "ModeCardCollectionViewCell",
@@ -37,7 +44,6 @@ class ModesViewController: UIViewController {
             forCellWithReuseIdentifier: "ModeCardCollectionViewCell")
         
         parentView.backgroundColor = ColorConstant.primaryColor
-        
         appNameLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         appNameLabel.textColor = UIColor.white
         screenNameLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
@@ -52,17 +58,25 @@ class ModesViewController: UIViewController {
         
         contentView.roundCorners(corners: [.topLeft, .topRight], radius: 30)
         modeCardCollectionView.layer.backgroundColor = UIColor.clear.cgColor
-        
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @objc func goToPage(_ sender: UIButton){
+        switch sender.tag {
+        case 0: // sentences
+            let vc = mainStoryboard.instantiateViewController(identifier: "SentencesViewController")
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+            break
+            
+        case 1: // word
+            let vc = mainStoryboard.instantiateViewController(identifier: "WordViewController")
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+            break
+        default:
+            print("Something")
+        }
     }
-    */
 
 }
 
@@ -84,6 +98,8 @@ extension ModesViewController: UICollectionViewDataSource, UICollectionViewDeleg
             for: indexPath) as! ModeCardCollectionViewCell
         modeCard.actionButton.setTitle(modeCards[indexPath.row].getButtonTitle(), for: .init())
         modeCard.actionButton.setTitleColor(UIColor.white, for: .init())
+        modeCard.actionButton.tag = indexPath.row
+        modeCard.actionButton.addTarget(self, action: #selector(goToPage(_:)), for: .touchUpInside)
         if modeCards[indexPath.row].getStatusAvailable() == false {
             modeCard.image.image = UIImage(named: "img-voteforme")
         } else {

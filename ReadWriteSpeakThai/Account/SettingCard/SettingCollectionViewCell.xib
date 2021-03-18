@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -31,16 +33,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofx-U3-9q3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofx-U3-9q3">
                                 <rect key="frame" x="365" y="22.5" width="30" height="30"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Nut">
-                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="ic-more-black">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="oEf-Hr-c6v" firstAttribute="width" secondItem="2VV-ng-Gcn" secondAttribute="width" multiplier="0.6" id="SVV-CB-1vd"/>
                             <constraint firstItem="ofx-U3-9q3" firstAttribute="centerY" secondItem="2VV-ng-Gcn" secondAttribute="centerY" id="XTq-VI-XeR"/>
@@ -56,13 +58,13 @@
                     </view>
                 </subviews>
             </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="2VV-ng-Gcn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QPD-to-BVr"/>
                 <constraint firstAttribute="trailing" secondItem="2VV-ng-Gcn" secondAttribute="trailing" id="V73-QJ-k20"/>
                 <constraint firstAttribute="bottom" secondItem="2VV-ng-Gcn" secondAttribute="bottom" id="ZE3-9f-a95"/>
                 <constraint firstItem="2VV-ng-Gcn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sIz-80-PjT"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
                 <outlet property="actionButton" destination="ofx-U3-9q3" id="Sky-NQ-KrQ"/>
                 <outlet property="parentView" destination="2VV-ng-Gcn" id="BWf-zb-Fod"/>
@@ -72,4 +74,10 @@
             <point key="canvasLocation" x="139.85507246376812" y="84.709821428571431"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="ic-more-black" width="5" height="8"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

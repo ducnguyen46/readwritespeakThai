@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WordCollectionViewCell" customModule="ReadWriteSpeakThai" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="152"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPg-LI-tXJ">
+                        <rect key="frame" x="10" y="10" width="132" height="132"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEW-fs-eou">
+                                <rect key="frame" x="13" y="20" width="106" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjD-mN-DLe">
+                                <rect key="frame" x="13" y="66" width="106" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezc-86-BCB">
+                                <rect key="frame" x="13" y="90.5" width="106" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PEW-fs-eou" firstAttribute="centerX" secondItem="tPg-LI-tXJ" secondAttribute="centerX" id="1fS-t4-Oxh"/>
+                            <constraint firstItem="LjD-mN-DLe" firstAttribute="centerX" secondItem="tPg-LI-tXJ" secondAttribute="centerX" id="3Kv-tk-u8C"/>
+                            <constraint firstItem="LjD-mN-DLe" firstAttribute="top" secondItem="tPg-LI-tXJ" secondAttribute="centerY" id="ItH-Zy-FxN"/>
+                            <constraint firstItem="ezc-86-BCB" firstAttribute="centerX" secondItem="tPg-LI-tXJ" secondAttribute="centerX" id="UAA-jr-sV1"/>
+                            <constraint firstItem="PEW-fs-eou" firstAttribute="width" secondItem="tPg-LI-tXJ" secondAttribute="width" multiplier="0.8" id="XEp-7q-gs2"/>
+                            <constraint firstItem="PEW-fs-eou" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tPg-LI-tXJ" secondAttribute="top" constant="10" id="YtA-ke-WyS"/>
+                            <constraint firstItem="LjD-mN-DLe" firstAttribute="width" secondItem="tPg-LI-tXJ" secondAttribute="width" multiplier="0.8" id="fH2-O1-Q2V"/>
+                            <constraint firstItem="ezc-86-BCB" firstAttribute="width" secondItem="tPg-LI-tXJ" secondAttribute="width" multiplier="0.8" id="gEE-6y-WYR"/>
+                            <constraint firstItem="LjD-mN-DLe" firstAttribute="top" secondItem="PEW-fs-eou" secondAttribute="bottom" constant="10" id="nM2-zW-lC5"/>
+                            <constraint firstItem="ezc-86-BCB" firstAttribute="top" secondItem="LjD-mN-DLe" secondAttribute="bottom" constant="5" id="tbf-XD-5Vd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tPg-LI-tXJ" secondAttribute="trailing" constant="10" id="NSM-lX-XGt"/>
+                <constraint firstItem="tPg-LI-tXJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="kpf-ez-SqJ"/>
+                <constraint firstAttribute="bottom" secondItem="tPg-LI-tXJ" secondAttribute="bottom" constant="10" id="uTa-CZ-TdH"/>
+                <constraint firstItem="tPg-LI-tXJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="vqH-be-Buu"/>
+            </constraints>
+            <size key="customSize" width="152" height="152"/>
+            <connections>
+                <outlet property="englishLabel" destination="ezc-86-BCB" id="Qem-g3-JGG"/>
+                <outlet property="parentView" destination="tPg-LI-tXJ" id="l83-Pj-JFf"/>
+                <outlet property="simpleThaiLabel" destination="LjD-mN-DLe" id="51L-F5-nwz"/>
+                <outlet property="wordLabel" destination="PEW-fs-eou" id="ksS-5v-4Ty"/>
+            </connections>
+            <point key="canvasLocation" x="156.52173913043478" y="103.79464285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

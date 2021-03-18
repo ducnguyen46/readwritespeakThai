@@ -24,6 +24,8 @@ class ToolsViewController: UIViewController {
     @IBOutlet weak var toolsCollectionView: UICollectionView!
     
     let toolCards: [ToolCard] = ToolCard.getToolCards()
+    var user: User!
+    let db = Database()
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -31,6 +33,7 @@ class ToolsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        user = db.getUser()
         toolsCollectionView.register(
             UINib(nibName: "ToolCollectionViewCell",
                   bundle: nil),
@@ -45,14 +48,19 @@ class ToolsViewController: UIViewController {
         screenNameLabel.textColor = UIColor.white
         coinValueLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         coinValueLabel.textColor = UIColor.white
+        
+        
         contentView.roundCorners(corners: [.topLeft, .topRight], radius: 30)
         //rich text
         infoLabel.text = "Select one of the different mode to work on"
         infoLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         infoLabel.textBold(label: infoLabel, normalText1: "Select one of the different ", boldText: "tool", normalText2: " to work on", fontSize: 16)
         toolsCollectionView.backgroundColor = UIColor.clear
-        
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        user = db.getUser()
+        coinValueLabel.text = "\(user.coin)"
     }
 }
 
@@ -82,10 +90,11 @@ extension ToolsViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     @objc func cardClicked(_ sender: UIButton){
-        let flashCardVC = mainStoryboard.instantiateViewController(identifier: "FlashCardViewController")
-        print("hi?")
-        flashCardVC.modalPresentationStyle = .fullScreen
-        self.present(flashCardVC, animated: true, completion: nil)
+        if(sender.titleLabel?.text == "Flashcard"){
+            let flashCardVC = mainStoryboard.instantiateViewController(identifier: "FlashCardViewController")
+            flashCardVC.modalPresentationStyle = .fullScreen
+            self.present(flashCardVC, animated: true, completion: nil)
+        }
     }
 }
 

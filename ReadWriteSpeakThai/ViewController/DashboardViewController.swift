@@ -32,14 +32,24 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var newModeLabel: UILabel!
     
     let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    var db = Database()
+    var user: User!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        user = db.getUser()
+        coinValueLabel.text = "\(user.coin)"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        user = db.getUser()
         //registry cell
+        if user == nil {
+            print("user nothing here")
+        }
         workCollectionView.register(
             UINib(
                 nibName: "WorkCollectionViewCell",
@@ -89,6 +99,7 @@ class DashboardViewController: UIViewController {
         lessionButton.addTarget(self, action: #selector(goToSentenceStudyVC(_:)), for: .touchUpInside)
         flashcardButton.addTarget(self, action: #selector(goToFlashcardVC(_:)), for: .touchUpInside)
     }
+
     
     @objc func goToOverviewVC(_ sender: UIButton){
         let vc = mainStoryboard.instantiateViewController(identifier: "SentencesViewController")
@@ -106,6 +117,18 @@ class DashboardViewController: UIViewController {
         let vc = mainStoryboard.instantiateViewController(identifier: "FlashCardViewController")
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
+    }
+    
+    @objc func goToPage(_ sender: UIButton){
+        switch sender.tag {
+        case 0: // sentences
+            let vc = mainStoryboard.instantiateViewController(identifier: "SentencesViewController")
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+            break
+        default:
+            print("Something")
+        }
     }
     
 }
@@ -129,6 +152,8 @@ extension DashboardViewController: UICollectionViewDataSource, UICollectionViewD
             let workCard = workCollectionView.dequeueReusableCell(withReuseIdentifier: "WorkCollectionViewCell", for: indexPath) as! WorkCollectionViewCell
             workCard.titleWorkCard.text = workCards[indexPath.row].getTitle()
             workCard.parentView.backgroundColor = workCards[indexPath.row].getColorCard()
+            workCard.actionButton.tag = indexPath.row
+            workCard.actionButton.addTarget(self, action: #selector(goToPage(_:)), for: .touchUpInside)
             return workCard
         default:
             let toolGameCards = ToolGameCard.getToolGameCards()

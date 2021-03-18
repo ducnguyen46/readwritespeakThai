@@ -15,15 +15,20 @@ class SentenceStudyViewController: UIViewController {
     @IBOutlet weak var actionControlCollectionView: UICollectionView!
     @IBOutlet weak var sentenceCollectionView: UICollectionView!
     @IBOutlet weak var audioControlCollectionView: UICollectionView!
-    @IBOutlet weak var wordCollectionView: UICollectionView!
+    @IBOutlet weak var wordTableView: UITableView!
     
     let apiService: APIService = APIService()
-    
+    let db = Database()
+    var user: User!
     let listActionControl = ActionControlSentence().getACSList()
     let listAudioControl = AudioControlSentence().getACSList()
     var listSentence: [Sentence] = []
     var listWord: [Word] = []
     var listWordInSentence: [Word] = []
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,12 +49,11 @@ class SentenceStudyViewController: UIViewController {
                 nibName: "AudioControlCollectionViewCell",
                 bundle: nil),
             forCellWithReuseIdentifier: "AudioControlCollectionViewCell")
-        wordCollectionView.register(
+        wordTableView.register(
             UINib(
-                nibName: "WordSentenceCollectionViewCell",
+                nibName: "WordSentenceTableViewCell",
                 bundle: nil),
-            forCellWithReuseIdentifier: "WordSentenceCollectionViewCell")
-        
+            forCellReuseIdentifier: "WordSentenceTableViewCell")
         
         parentView.backgroundColor = ColorConstant.primaryColor
         backButton.layer.cornerRadius = 0.5 * backButton.bounds.size.width
@@ -66,6 +70,10 @@ class SentenceStudyViewController: UIViewController {
     func initData(){
         listSentence = apiService.getAllSentences()
         listWord = apiService.getAllWords()
+        listWordInSentence = getWordsFromSentence(sentence: listSentence[0])
+        
+        user = db.getUser()
+        print(user.coin)
     }
             
     @objc func backToPreviousViewController(){
@@ -82,20 +90,30 @@ class SentenceStudyViewController: UIViewController {
     }
     
     func getPronounceFromSentence(sentence: Sentence) -> String {
-        listWordInSentence = []
         var pronounce: String = ""
-        for i in 0...sentence.words!.count - 1 {
-            let wordIndex = sentence.words![i]
+        for i in 0...sentence.words.count - 1 {
+            let wordIndex = sentence.words[i]
             if wordIndex is Int {
                 let word = listWord.filter {$0.id == (wordIndex as! Int)}[0]
-                // them tu vao
-                listWordInSentence.append(word)
                 pronounce.append(" " + word.simpleThai[0])
             } else if wordIndex is String{
                 pronounce.append((wordIndex as! String))
             }
         }
         return pronounce
+    }
+    
+    func getWordsFromSentence(sentence: Sentence) -> [Word] {
+        var words:[Word] = []
+        for i in 0...sentence.words.count - 1 {
+            let wordIndex = sentence.words[i]
+            if wordIndex is Int {
+                let word: Word = listWord.filter {$0.id == (wordIndex as! Int)}[0]
+                // them tu vao
+                words.append(word)
+            }
+        }
+        return words
     }
 
 }
@@ -144,12 +162,25 @@ extension SentenceStudyViewController: UICollectionViewDelegate, UICollectionVie
             return sentenceCell
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if(collectionView == sentenceCollectionView){
+            listWordInSentence = getWordsFromSentence(sentence: listSentence[indexPath.row])
+            print("\(indexPath.row) : \(listWordInSentence.count)")
+            wordTableView.reloadData()
+        }
+    }
+    
 }
 
 extension SentenceStudyViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let ctvSize = contentView.bounds.size
+//        let screenSize = UIScreen.main.bounds.size
         
         
         switch collectionView {
@@ -162,7 +193,7 @@ extension SentenceStudyViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(
                 width: (ctvSize.width - 30)/CGFloat(listAudioControl.count) - 15,
                 height: ctvSize.height * 0.1)
-            
+         
         default:
             return CGSize(
                 width: ctvSize.height * 300/750,
@@ -183,4 +214,28 @@ extension SentenceStudyViewController: UICollectionViewDelegateFlowLayout {
             return 0
         }
     }
+}
+
+extension SentenceStudyViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listWordInSentence.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let word = listWordInSentence[indexPath.row]
+        let tableWordCell = wordTableView.dequeueReusableCell(withIdentifier: "WordSentenceTableViewCell", for: indexPath) as! WordSentenceTableViewCell
+        tableWordCell.thaiLabel.text = word.thai
+        var english = ""
+        for e in word.english {
+            english = english + e + "\n"
+        }
+        tableWordCell.simpleThaiLabel.text = word.simpleThai[0]
+        tableWordCell.englishLabel.text = english
+        
+        return tableWordCell
+    }  
 }

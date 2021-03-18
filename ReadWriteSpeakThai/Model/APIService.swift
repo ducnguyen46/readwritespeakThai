@@ -32,15 +32,9 @@ class APIService {
         var listCategory = [Category]()
         
         for json in jsonArray {
-            guard let id = json["id"] as? Int,
-            let name = json["name"] as? String,
-            let order = json["order"] as? Int
-            else { return [Category]()}
             
             var category = Category()
-            category.id = id
-            category.name = name
-            category.order = order
+            category = category.fromJson(json)
             
             listCategory.append(category)
         }
@@ -52,27 +46,9 @@ class APIService {
         let jsonArray = readLocalFile(forName: "words") as! [[String: Any]]
         
         for json in jsonArray {
-            guard let id = json["id"] as? Int,
-                  let thai = json["thai"] as? String,
-                  let english = json["english"] as? [String],
-                  let tone = json["tone"] as? String,
-                  let simpleThai = json["simpleThai"] as? [String],
-                  let order = json["order"] as? Int,
-                  let tPos = json["tPos"] as? [String]
-//                  let composed = json["composed"] as? [String]
-            
-            else {
-                return [Word]()
-            }
             var word = Word()
-            word.id = id
-            word.thai = thai
-            word.english = english
-            word.tone = tone
-            word.simpleThai = simpleThai
-            word.order = order
-            word.tPos = tPos
-//            word.composed = composed
+            
+            word = word.fromJson(json)
             
             listWord.append(word)
         }
@@ -84,25 +60,8 @@ class APIService {
         var jsonArray = readLocalFile(forName: "numbers") as! [[String:Any]]
         var listNumber:[Number] = []
         for json in jsonArray {
-            guard let name = json["Name"] as? String,
-                  let nameThai = json["NameThai"] as? String,
-                  let arabic = json["Arabic"] as? String,
-                  let romanization = json["Romanization"] as? String,
-                  let comment = json["comment"] as? String,
-                  let tone = json["tone"] as? String,
-                  let id = json["id"] as? Int
-                else {
-                return [Number]()
-            }
-             
             var number:Number = Number()
-            number.name = name
-            number.nameThai = nameThai
-            number.arabic = arabic
-            number.romanization = romanization
-            number.comment = comment
-            number.tone = tone
-            number.id = id
+            number = number.fromJson(json)
             
             listNumber.append(number)
         }
@@ -114,16 +73,8 @@ class APIService {
         let jsonArray = readLocalFile(forName: "sources") as! [[String:Any]]
         
         for json in jsonArray {
-            let name = json["name"] as? String
-            let key = json["key"] as? String
-            let group = json["group"] as? String
-            let disable = json["disabled"] as? Bool
-    
             var source:Source = Source()
-            source.name = name
-            source.key = key
-            source.group = group
-            source.disable = disable
+            source = source.fromJson(json)
             
             listSource.append(source)
         }
@@ -134,19 +85,9 @@ class APIService {
         var listVowel: [Vowel] = []
         let jsonArray = readLocalFile(forName: "vowels") as! [[String: Any]]
         for json in jsonArray {
-            guard let duration = json["Duration"] as? String,
-                  let name = json["Name"] as? String,
-                  let romanization = json["romanization"] as? String,
-                  let word = json["Word"] as? String,
-                  let variant = json["Variant"] as? [String],
-                  let type = json["Type"] as? String,
-                  let simpleThai = json["SimpleThai"] as? [String],
-                  let english = json["English"] as? String,
-                  let id = json["Id"] as? Int  else {
-                return [Vowel]()
-            }
+            var vowel = Vowel()
+            vowel = vowel.fromJson(json)
             
-            let vowel = Vowel(duration: duration, name: name, romanization: romanization, word: word, variant: variant, type: type, simpleThai: simpleThai, english: english, id: id)
             listVowel.append(vowel)
         }
         
@@ -158,18 +99,8 @@ class APIService {
         let jsonArray = readLocalFile(forName: "sentences") as! [[String:Any]]
         
         for json in jsonArray {
-            guard let id = json["id"] as? Int,
-                  let thai = json["thai"] as? String,
-                  let english = json["english"] as? String,
-                  let source = json["source"] as? String,
-                  let categories = json["categories"] as? [String],
-                  let words = json["words"] as? [Any]
-            else {
-                return [Sentence]()
-            }
-            
-            var sentence = Sentence(id: id, thai: thai, english: english, source: source, categories: categories, words: words)
-            
+            var sentence = Sentence()
+            sentence = sentence.fromJson(json)
             listSentence.append(sentence)
         }
         return listSentence

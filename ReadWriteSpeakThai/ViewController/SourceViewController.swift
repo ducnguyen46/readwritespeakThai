@@ -111,7 +111,7 @@ extension SourceViewController: UICollectionViewDelegate, UICollectionViewDataSo
                 withReuseIdentifier: "BookSelectionCollectionViewCell",
                 for: indexPath) as! BookSelectionCollectionViewCell
             bookCell.titleCell.text = listSourceBookManeeMana[indexPath.row].name
-            bookCell.isHidden = listSourceBookManeeMana[indexPath.row].disable!
+            bookCell.isHidden = listSourceBookManeeMana[indexPath.row].disable
             return bookCell
         default:
             let subtitleCell = subtitleCollectionView.dequeueReusableCell(

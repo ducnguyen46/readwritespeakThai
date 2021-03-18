@@ -15,9 +15,12 @@ class WordSentenceCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var thaiLabel: UILabel!
     @IBOutlet weak var englishLabel: UILabel!
+    @IBOutlet weak var thaiSimple: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        viewPlayButton.backgroundColor = ColorConstant.lightGray
     }
 
 }

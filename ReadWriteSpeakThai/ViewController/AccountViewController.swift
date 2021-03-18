@@ -18,13 +18,15 @@ class AccountViewController: UIViewController {
     @IBOutlet weak var settingCollectionView: UICollectionView!
     
     let settingCardList: [SettingCard] = SettingCard.getSettingCardList()
-    
+    var user: User!
+    let db = Database()
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        user = db.getUser()
         settingCollectionView.register(
             UINib(nibName: "SettingCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SettingCollectionViewCell")
         
@@ -36,11 +38,17 @@ class AccountViewController: UIViewController {
         screenNameLabel.textColor = UIColor.white
         coinValueLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         coinValueLabel.textColor = UIColor.white
+        
         contentView.roundCorners(corners: [.topLeft, .topRight], radius: 30)
         contentView.backgroundColor = ColorConstant.lightGray
         
         settingLabel.font = UIFont.systemFont(ofSize: 16.0, weight: .bold)
         settingCollectionView.backgroundColor = UIColor.clear
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        user = db.getUser()
+        coinValueLabel.text = "\(user.coin)"
     }
     
 }

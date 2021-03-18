@@ -17,10 +17,12 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate {
     var toolsVC: ToolsViewController!
     var accountVC: AccountViewController!
     
+    var user: User!
+    var db = Database()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        initData()
         self.delegate = self
         mainTabbar.tintColor = ColorConstant.lightRed
         mainTabbar.layer.cornerRadius = 20
@@ -36,6 +38,7 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate {
         toolsVC.tabBarItem.image = UIImage(named: "ic-tool")
         accountVC.tabBarItem.image = UIImage(named: "ic-account")
         
+        
         viewControllers = [dashboardVC, modesVC, toolsVC, accountVC]
         
 //        for tabBarItem in tabBar.items! {
@@ -43,16 +46,20 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate {
 //            tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
 //        }
     }
-
-//    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-//        switch viewController {
-//        case dashboardVC:
-//            dashboardVC.tabBarItem.title = "Dashboard"
-//            dashboardVC.tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-//            break
-//        default:
-//            return true
-//        }
-//        return true
-//    }
+    
+    func initData() {
+        user = User()
+        user.coin = 100
+        if db.createUser() {
+            if db.getUser().coin == -1 {
+                print("Nothing user in there")
+                db.insertUser(userInsert: user)
+            } else {
+                user = db.getUser()
+                print(user.coin)
+            }
+        } else {
+            print("Can't create user table")
+        }
+    }
 }

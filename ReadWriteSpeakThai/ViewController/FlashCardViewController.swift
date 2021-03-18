@@ -28,6 +28,9 @@ class FlashCardViewController: UIViewController {
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var deckListCollectionView: UICollectionView!
     
+    var user: User!
+    let db = Database()
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }

@@ -16,7 +16,10 @@ class DeckListViewController: UIViewController {
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var activeButton: UIButton!
     @IBOutlet weak var verbCollectionView: UICollectionView!
+    @IBOutlet weak var coinValueLabel: UILabel!
     
+    let db = Database()
+    var user: User!
     var titleText: String? = "test"
     var infoText: String?
     var isActive: Bool = false
@@ -29,8 +32,8 @@ class DeckListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        user = db.getUser()
         //check titleText
-        print(titleText!)
         switch titleText {
         case "Top 25 Verbs":
             verbList = VerbCard.getListVerbCard()
@@ -81,6 +84,12 @@ class DeckListViewController: UIViewController {
         backButton.layer.cornerRadius = 0.5 * backButton.bounds.size.width
         // action
         backButton.addTarget(self, action: #selector(backToPreviousViewController), for: .allEvents)
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        user = db.getUser()
+        coinValueLabel.text = "\(user.coin)"
     }
     
     @objc func backToPreviousViewController(){
