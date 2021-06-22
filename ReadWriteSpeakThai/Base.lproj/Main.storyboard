@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jgG-0I-Ogn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jRb-bX-HVn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -936,11 +936,11 @@
                                             </collectionViewCell>
                                         </cells>
                                         <connections>
-                                            <outlet property="dataSource" destination="Nmz-MP-j6O" id="sWO-JD-u6j"/>
-                                            <outlet property="delegate" destination="Nmz-MP-j6O" id="i4N-eb-UfR"/>
+                                            <outlet property="dataSource" destination="jRb-bX-HVn" id="TBf-ox-iyd"/>
+                                            <outlet property="delegate" destination="jRb-bX-HVn" id="8IX-Tf-dgj"/>
                                         </connections>
                                     </collectionView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Words by Words" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUP-hy-StW">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example sentences" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUP-hy-StW">
                                         <rect key="frame" x="30" y="523.5" width="331" height="19.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <nil key="highlightedColor"/>
@@ -956,8 +956,8 @@
                                         </collectionViewFlowLayout>
                                         <cells/>
                                         <connections>
-                                            <outlet property="dataSource" destination="Nmz-MP-j6O" id="T2a-D4-i5N"/>
-                                            <outlet property="delegate" destination="Nmz-MP-j6O" id="dFm-rV-V89"/>
+                                            <outlet property="dataSource" destination="jRb-bX-HVn" id="Ezy-Pl-odl"/>
+                                            <outlet property="delegate" destination="jRb-bX-HVn" id="8Cx-36-zDN"/>
                                         </connections>
                                     </collectionView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bh1-ew-Gvd">
@@ -980,16 +980,16 @@
                                             </collectionViewCell>
                                         </cells>
                                         <connections>
-                                            <outlet property="dataSource" destination="Nmz-MP-j6O" id="W9d-Mw-bSU"/>
-                                            <outlet property="delegate" destination="Nmz-MP-j6O" id="WdP-UV-jzt"/>
+                                            <outlet property="dataSource" destination="jRb-bX-HVn" id="bOn-mf-SYD"/>
+                                            <outlet property="delegate" destination="jRb-bX-HVn" id="wFd-wN-PPg"/>
                                         </connections>
                                     </collectionView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Yx-yi-1q9">
                                         <rect key="frame" x="0.0" y="558" width="414" height="215"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="dataSource" destination="Nmz-MP-j6O" id="MAf-tH-yen"/>
-                                            <outlet property="delegate" destination="Nmz-MP-j6O" id="pdB-hJ-OnN"/>
+                                            <outlet property="dataSource" destination="jRb-bX-HVn" id="YYk-CH-8vY"/>
+                                            <outlet property="delegate" destination="jRb-bX-HVn" id="bWE-6c-Asa"/>
                                         </connections>
                                     </tableView>
                                 </subviews>
@@ -1037,8 +1037,8 @@
                         <outlet property="contentView" destination="zAS-E8-32m" id="1fd-j5-w9W"/>
                         <outlet property="parentView" destination="o2c-uS-o2e" id="VFl-wf-F2q"/>
                         <outlet property="screenName" destination="Djy-zD-a84" id="3LA-5g-Cin"/>
+                        <outlet property="sentenceTableView" destination="4Yx-yi-1q9" id="ivh-6S-DMt"/>
                         <outlet property="wordCollectionView" destination="f08-la-Gl1" id="QxM-c6-WJz"/>
-                        <outlet property="wordTableView" destination="4Yx-yi-1q9" id="ivh-6S-DMt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSE-h7-MAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

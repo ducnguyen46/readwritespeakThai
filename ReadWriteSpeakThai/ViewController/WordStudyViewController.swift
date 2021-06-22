@@ -17,7 +17,7 @@ class WordStudyViewController: UIViewController {
     @IBOutlet weak var actionControlCollectionView: UICollectionView!
     @IBOutlet weak var wordCollectionView: UICollectionView!
     @IBOutlet weak var audioControlCollectionView: UICollectionView!
-    @IBOutlet weak var wordTableView: UITableView!
+    @IBOutlet weak var sentenceTableView: UITableView!
     
     let apiService: APIService = APIService()
     
@@ -50,11 +50,11 @@ class WordStudyViewController: UIViewController {
                 nibName: "AudioControlCollectionViewCell",
                 bundle: nil),
             forCellWithReuseIdentifier: "AudioControlCollectionViewCell")
-        wordTableView.register(
+        sentenceTableView.register(
             UINib(
-                nibName: "WordSentenceTableViewCell",
+                nibName: "SentenceWordTableViewCell",
                 bundle: nil),
-            forCellReuseIdentifier: "WordSentenceTableViewCell")
+            forCellReuseIdentifier: "SentenceWordTableViewCell")
         
         parentView.backgroundColor = ColorConstant.primaryColor
         backButton.layer.cornerRadius = 0.5 * backButton.bounds.size.width
@@ -126,7 +126,7 @@ extension WordStudyViewController: UICollectionViewDelegate, UICollectionViewDat
             return listAudioControl.count
             
         default:
-            return listSentence.count
+            return listWord.count
         }
     }
     
@@ -169,7 +169,7 @@ extension WordStudyViewController: UICollectionViewDelegate, UICollectionViewDat
         if(collectionView == wordCollectionView){
             listWordInSentence = getWordsFromSentence(sentence: listSentence[indexPath.row])
             print("\(indexPath.row) : \(listWordInSentence.count)")
-            wordTableView.reloadData()
+            sentenceTableView.reloadData()
         }
     }
 }
@@ -195,7 +195,7 @@ extension WordStudyViewController: UICollectionViewDelegateFlowLayout {
         default:
             return CGSize(
                 width: ctvSize.height * 300/750,
-                height: ctvSize.height * 300/750 - 30
+                height: ctvSize.height * 300/750
             )
         }
     }
@@ -220,20 +220,14 @@ extension WordStudyViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listWordInSentence.count
+        return listSentence.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let word = listWordInSentence[indexPath.row]
-        var tableWordCell = wordTableView.dequeueReusableCell(withIdentifier: "WordSentenceTableViewCell", for: indexPath) as! WordSentenceTableViewCell
-        tableWordCell.thaiLabel.text = word.thai
-        var english = ""
-        for e in word.english {
-            english = english + e + "\n"
-        }
-        tableWordCell.simpleThaiLabel.text = word.simpleThai[0]
-        tableWordCell.englishLabel.text = english
-        
-        return tableWordCell
+        let sentence = listSentence[indexPath.row]
+        var tableSentenceCell = sentenceTableView.dequeueReusableCell(withIdentifier: "SentenceWordTableViewCell", for: indexPath) as! SentenceWordTableViewCell
+        tableSentenceCell.thaiLabel.text = sentence.thai
+        tableSentenceCell.englishLabel.text = sentence.english
+        return tableSentenceCell
     }
 }

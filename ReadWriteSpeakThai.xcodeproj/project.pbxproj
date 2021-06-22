@@ -84,6 +84,8 @@
 		C38CCE1625FA13D20002F827 /* WordBoardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38CCE1425FA13D20002F827 /* WordBoardCollectionViewCell.xib */; };
 		C38CCE1925FA21430002F827 /* WordBoardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38CCE1825FA21430002F827 /* WordBoardCard.swift */; };
 		C38D9C7F260110B9000B1900 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38D9C7E260110B9000B1900 /* Database.swift */; };
+		C3C7462B26044339003FB59A /* SentenceWordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C7462926044339003FB59A /* SentenceWordTableViewCell.swift */; };
+		C3C7462C26044339003FB59A /* SentenceWordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C7462A26044339003FB59A /* SentenceWordTableViewCell.xib */; };
 		C3C8CD8425F8CC6D006FF5F1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C8CD8325F8CC6D006FF5F1 /* APIService.swift */; };
 		C3C8CD8725F8CCC9006FF5F1 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C8CD8625F8CCC9006FF5F1 /* Word.swift */; };
 		C3C8CD8A25F8DDA7006FF5F1 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C8CD8925F8DDA7006FF5F1 /* Number.swift */; };
@@ -180,6 +182,8 @@
 		C38CCE1425FA13D20002F827 /* WordBoardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordBoardCollectionViewCell.xib; sourceTree = "<group>"; };
 		C38CCE1825FA21430002F827 /* WordBoardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordBoardCard.swift; sourceTree = "<group>"; };
 		C38D9C7E260110B9000B1900 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		C3C7462926044339003FB59A /* SentenceWordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceWordTableViewCell.swift; sourceTree = "<group>"; };
+		C3C7462A26044339003FB59A /* SentenceWordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SentenceWordTableViewCell.xib; sourceTree = "<group>"; };
 		C3C8CD8325F8CC6D006FF5F1 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		C3C8CD8625F8CCC9006FF5F1 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		C3C8CD8925F8DDA7006FF5F1 /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
@@ -491,6 +495,7 @@
 		C38CCE1125FA13930002F827 /* WordCard */ = {
 			isa = PBXGroup;
 			children = (
+				C3C7462226044190003FB59A /* SentenceEachWord */,
 				C38CCE1225FA139F0002F827 /* WordBoardCard */,
 			);
 			path = WordCard;
@@ -504,6 +509,15 @@
 				C38CCE1825FA21430002F827 /* WordBoardCard.swift */,
 			);
 			path = WordBoardCard;
+			sourceTree = "<group>";
+		};
+		C3C7462226044190003FB59A /* SentenceEachWord */ = {
+			isa = PBXGroup;
+			children = (
+				C3C7462926044339003FB59A /* SentenceWordTableViewCell.swift */,
+				C3C7462A26044339003FB59A /* SentenceWordTableViewCell.xib */,
+			);
+			path = SentenceEachWord;
 			sourceTree = "<group>";
 		};
 		C3DB849025D219F20074B19B /* Account */ = {
@@ -641,6 +655,7 @@
 				C3879AFA25EAD95F00467F59 /* PopupViewController.xib in Resources */,
 				C340B22A25F8C2DB00966810 /* words.json in Resources */,
 				C3523FB425CAD18C006886C0 /* Main.storyboard in Resources */,
+				C3C7462C26044339003FB59A /* SentenceWordTableViewCell.xib in Resources */,
 				C34C364525D0C78100D7BD2F /* ModeCardCollectionViewCell.xib in Resources */,
 				C33FB4AD25E3CCA2008E1A93 /* ActionSentenceCollectionViewCell.xib in Resources */,
 				C37ADAA025E8DFE500067E8F /* CategoryTagTableViewCell.xib in Resources */,
@@ -734,6 +749,7 @@
 				C3549B5B25E0AED800659DCA /* AppSelectionCollectionViewCell.swift in Sources */,
 				C354818A25D1294D00260008 /* ToolsViewController.swift in Sources */,
 				C38D9C7F260110B9000B1900 /* Database.swift in Sources */,
+				C3C7462B26044339003FB59A /* SentenceWordTableViewCell.swift in Sources */,
 				C371B91425E03910007422BE /* SourceViewController.swift in Sources */,
 				C3F19D6425CAD2F30026D960 /* Constant.swift in Sources */,
 				C3DB849425D21A340074B19B /* SettingCollectionViewCell.swift in Sources */,
